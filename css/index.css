@@ -46,7 +46,7 @@ html {
   opacity: 1;
 }
 .nav-placeholder .mobile-nav span {
-  transition: all 3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 5px;
 }
 .nav-placeholder .mobile-nav span:nth-child(1) {
