@@ -1,0 +1,205 @@
+html {
+    background-color: #191919;
+}
+
+.border-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    .border {
+        width: 16.6%;
+        height: 100%;
+        position: relative;
+        display: inline-block;
+        border-right: 1px solid #2b2b2b;
+    }
+}
+
+.nav-placeholder {
+
+    .logo {
+        position: fixed;
+        left: 30px;
+        top: 20px;
+
+        img {
+            width: 50px;
+            height: 40px;
+        }
+    }
+
+    .mobile-nav {
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 997;
+        justify-content: center;
+        align-content: center;
+        opacity: 1;
+
+        span {
+            transition: all .5s cubic-bezier(.4,0,.2,1);
+            margin-bottom: 5px;
+        }
+
+        span:nth-child(1) {
+            top: 10px;
+            width: 30px;
+            position: absolute;
+            height: 3px;
+            background: white;
+        }
+
+        span:nth-child(2) {
+            transform-origin: right center;
+            top: 20px;
+            width: 20px;
+            margin-left: 5px;
+            position: absolute;
+            height: 3px;
+            background: white;
+        }
+
+        span:nth-child(3) {
+            top: 30px;
+            width: 30px;
+            position: absolute;
+            height: 3px;
+            background: white;
+        }
+    }
+
+    .mobile-nav:hover {
+
+        span:nth-child(2) {
+            transform-origin: right center;
+            top: 20px;
+            width: 30px;
+            margin-left: 0px;
+            position: absolute;
+            height: 3px;
+            background: white;
+        }
+    }
+
+}
+
+.main-hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        align-self: center;
+    }
+
+    .hero-title {
+        width: 500px;
+        height: 100px;
+        left: -30%;
+        bottom: -10%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: auto;
+
+        h1 {
+            display: inline;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            font-size: 2rem;
+            letter-spacing: 4px;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            letter-spacing: 2.5px;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-top: 20px; 
+        }
+    }
+
+}
+
+.scroll-next {
+    width: auto;
+    height: 180px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    span {
+        width: 1px;
+        height: 100px;
+        background: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+
+    h6 {
+        font-family: 'Roboto', sans-serif;
+        font-size: .8rem;
+        color: white;
+        transform-origin: center;
+        transform: rotate(90deg);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 10px 0 0;
+        padding-top: 0!important;
+    }
+}
+
+.works {
+    padding-top: 150px;
+
+    .work-intro {
+        width: auto;
+        margin: 0 0 10% 18%;
+    
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            line-height: .9;
+            letter-spacing: 2px;
+            position: relative;
+            margin-bottom: .5rem;
+            font-weight: 700;
+    
+        }
+    
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-top: 20px; 
+        }
+    }
+
+}
