@@ -31,6 +31,7 @@ html {
         position: fixed;
         left: 30px;
         top: 20px;
+        z-index: 997;
 
         img {
             width: 40px;
@@ -263,7 +264,8 @@ html {
         padding: 2% 2% 2% 5%;
         border-top: 1px solid #414141;
         border-bottom: 1px solid #414141;
-        transition: .5s ease;
+        display: flex;
+        flex-direction: row;
 
         h2 {
             font-family: 'Roboto', sans-serif;
@@ -285,13 +287,32 @@ html {
             text-transform: uppercase;
             margin-top: 20px;
             line-height: 30px;
+            padding-right: 2%;
+        }
+
+        img {
+            border: 1px solid #414141;
+            padding: 10px;
+            object-fit: cover;
+            max-width: 600px;
+            max-height: 400px;
+            cursor: pointer;
+            opacity: .5;
+            filter: grayscale(100%);
+            transition: all .3s ease-in-out;
+        }
+
+        img:hover {
+            transition: all .3s ease-in-out;
+            opacity: 1;
+            filter: grayscale(0%);
         }
 
         .main-btn {
             width: 20%;
             background: #191919;
             border: 1px solid #414141;
-            margin-top: 20px;
+            margin-top: 50px;
             padding: 20px 20px 20px 20px;
             font-family: 'Roboto', sans-serif;
             letter-spacing: 2.5px;
@@ -311,4 +332,5 @@ html {
         }
 
     }
+
 }
