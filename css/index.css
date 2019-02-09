@@ -98,6 +98,23 @@ html {
   left: 0;
   bottom: 0;
   align-self: center;
+  opacity: 1;
+  animation: heroimg 3s ease-in-out;
+  animation-direction: alternate-reverse;
+}
+@keyframes heroimg {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -8%;
+  }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 .main-hero .hero-title {
   width: 500px;
@@ -142,6 +159,26 @@ html {
   display: inline-block;
   text-transform: uppercase;
   margin-top: 20px;
+}
+.main-hero .main-btn {
+  width: 40%;
+  background: #191919;
+  border: 1px solid #414141;
+  margin-top: 20px;
+  padding: 20px 20px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2.5px;
+  color: #414141;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+.main-hero .main-btn:hover {
+  transition: 0.5s ease-in-out;
+  border: 1px solid white;
+  background: white;
+  color: #191919;
 }
 .scroll-next {
   width: auto;
