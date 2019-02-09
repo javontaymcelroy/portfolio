@@ -30,8 +30,8 @@ html {
   top: 20px;
 }
 .nav-placeholder .logo img {
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 35px;
 }
 .nav-placeholder .mobile-nav {
   position: fixed;
@@ -173,6 +173,7 @@ html {
   font-size: 0.8rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .main-hero .main-btn:hover {
   transition: 0.5s ease-in-out;
@@ -212,6 +213,9 @@ html {
 }
 .works {
   padding-top: 150px;
+  position: relative;
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #414141;
 }
 .works .work-intro {
   width: auto;
@@ -235,6 +239,54 @@ html {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   margin-top: 20px;
+}
+.works .work {
+  width: auto;
+  background: #191919;
+  padding: 2% 2% 2% 5%;
+  border: 1px solid #414141;
+  transition: 0.5s ease;
+}
+.works .work h2 {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.works .work p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.works .work .main-btn {
+  width: 20%;
+  background: #19191900;
+  border: 1px solid white;
+  margin-top: 20px;
+  padding: 20px 20px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2.5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.works .work .main-btn:hover {
+  transition: 0.5s ease-in-out;
+  border: 1px solid white;
+  background: white;
+  color: #191919;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
