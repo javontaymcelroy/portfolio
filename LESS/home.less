@@ -12,8 +12,17 @@ html {
         height: 100%;
         position: relative;
         display: inline-block;
-        border-right: 1px solid #2b2b2b;
+        border-right: 1px solid #414141;
+        transition: all .5s cubic-bezier(.4,0,.2,1);
+        animation: bordergrow 5s;
+        animation-direction: alternate-reverse;
+
+        @keyframes bordergrow {
+            from {height: 100%;}
+            to {height: 0%;}
+          }
     }
+
 }
 
 .nav-placeholder {
@@ -42,7 +51,7 @@ html {
         opacity: 1;
 
         span {
-            transition: all .5s cubic-bezier(.4,0,.2,1);
+            transition: all 3s ease-in-out;
             margin-bottom: 5px;
         }
 
@@ -116,6 +125,16 @@ html {
         top: 0;
         right: 0;
         margin: auto;
+        animation: herotitle 3s ease-in-out;
+        animation-direction: alternate-reverse;
+        opacity: 1;
+
+        @keyframes herotitle {
+            from {bottom: -10%;}
+            to {bottom: 2%;}
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
 
         h1 {
             display: inline;
@@ -126,6 +145,7 @@ html {
             font-size: 2rem;
             letter-spacing: 4px;
         }
+    
         p {
             font-family: 'Roboto', sans-serif;
             color: white;
