@@ -244,7 +244,8 @@ html {
   width: auto;
   background: #191919;
   padding: 2% 2% 2% 5%;
-  border: 1px solid #414141;
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #414141;
   transition: 0.5s ease;
 }
 .works .work h2 {
