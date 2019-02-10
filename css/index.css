@@ -91,6 +91,7 @@ html {
 .main-hero img {
   width: 500px;
   height: 500px;
+  filter: grayscale(100%);
   display: flex;
   position: absolute;
   margin: auto;
@@ -100,6 +101,7 @@ html {
   bottom: 0;
   align-self: center;
   opacity: 1;
+  transition: 0.3s ease-in-out;
   animation: heroimg 3s ease-in-out;
   animation-direction: alternate-reverse;
 }
@@ -116,6 +118,10 @@ html {
   to {
     opacity: 0;
   }
+}
+.main-hero img:hover {
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
 }
 .main-hero .hero-title {
   width: 500px;
