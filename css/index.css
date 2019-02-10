@@ -228,7 +228,7 @@ html {
   font-size: 3rem;
   color: white;
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 50px;
   letter-spacing: 2px;
   position: relative;
   margin-bottom: 0.5rem;
@@ -307,6 +307,47 @@ html {
   transition: 0.5s ease;
 }
 .works .work .main-btn:hover {
+  transition: 0.5s ease-in-out;
+  border: 1px solid white;
+  background: white;
+  color: #191919;
+}
+.works .artwork {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.works .artwork img {
+  border: 1px solid #414141;
+  object-fit: cover;
+  max-width: 250px;
+  max-height: 350px;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+.works .artwork img:hover {
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+.works .main-btn-art {
+  width: 20%;
+  background: #191919;
+  border: 1px solid #414141;
+  text-decoration: none !important;
+  color: #414141;
+  margin: 50px auto;
+  padding: 20px 20px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.works .main-btn-art:hover {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
