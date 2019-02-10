@@ -357,7 +357,7 @@ html {
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .works .work .project-image img {
     max-width: 300px;
     filter: grayscale(0%);
@@ -435,6 +435,11 @@ html {
   margin: 20px 0px 20px 0px;
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 800px) {
+  .works .artwork img {
+    filter: grayscale(0%);
+  }
 }
 .works .artwork img:hover {
   transition: all 0.3s ease-in-out;
