@@ -34,6 +34,12 @@ html {
   width: 40px;
   height: 35px;
 }
+@media (max-width: 500px) {
+  .nav-placeholder .logo img {
+    width: 30px;
+    height: 25px;
+  }
+}
 .nav-placeholder .mobile-nav {
   position: fixed;
   right: 30px;
@@ -247,6 +253,11 @@ html {
   border-top: 1px solid #414141;
   border-bottom: 1px solid #414141;
 }
+@media (max-width: 500px) {
+  .works {
+    padding-top: 50px;
+  }
+}
 .works .work-title {
   width: auto;
   margin: 0 0 10% 18%;
@@ -322,6 +333,7 @@ html {
   .works .work h2 {
     font-size: 1rem;
     font-weight: 500;
+    line-height: 30px;
   }
 }
 .works .work p {
