@@ -25,21 +25,35 @@
     <div class="border"></div>
   </section>
   <!-- End of Border Background -->
+
   <!--NAVIGATION-->
   <section class="nav-placeholder">
-    <div class="logo">
+    <a href="index.html" class="logo">
       <img src="assets/images/logo.png">
-    </div>
+    </a>
     
     <a href="#">
-      <div class="mobile-nav">
+      <div class="mobile-nav" onclick="openNav()">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </a>
   </section>
+
+  <!--Nav Overlay-->
+  <section id="nav" class="overlay">
+    <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+    <div class="overlay__content">
+      <a href="#">Github</a>
+      <a href="#">Behance</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </section>
+  <!--End of Nav Overlay-->
   <!--END OF NAVIGATION-->
+
   <section class="main-hero">
     <img src="assets/images/hold_up.png">
     <div class="hero-title">

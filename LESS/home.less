@@ -31,7 +31,7 @@ html {
         position: fixed;
         left: 30px;
         top: 30px;
-        z-index: 997;
+        z-index: 1200;
 
         img {
             width: 30px;
@@ -96,6 +96,70 @@ html {
         }
     }
 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: #080808;
+    width: 0%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: all .5s; 
+
+    .closeBtn {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .closeBtn:hover {
+        animation: spin 1s ease-in-out;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+
+    .overlay__content {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+
+        @media (max-width: 800px){
+            top: 10%;
+        }
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: white;
+            padding: 50px;
+            font-size: 1.5rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            transition: .2s ease-in-out;
+        }
+
+        a:hover {
+            transition: .2s ease-in-out;
+            color: #ffd700;
+        }
+    }
 }
 
 .main-hero {
