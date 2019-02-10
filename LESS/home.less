@@ -351,7 +351,11 @@ html {
         }
 
         .project-image {
-            margin-top: 10%;
+
+            @media (max-width: 500px){
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
 
             img {
                 border: 1px solid #414141;
