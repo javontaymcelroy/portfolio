@@ -13,7 +13,7 @@ html {
   display: inline-block;
   border-right: 1px solid #414141;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: bordergrow 5s;
+  animation: bordergrow 2s;
   animation-direction: alternate-reverse;
 }
 @keyframes bordergrow {
@@ -515,9 +515,9 @@ html {
 .works .artwork {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-content: space-around;
+  justify-content: space-evenly;
   justify-items: center;
-  grid-row-gap: 20px;
+  grid-row-gap: 45px;
 }
 @media (max-width: 1024px) {
   .works .artwork {
@@ -535,8 +535,7 @@ html {
 .works .artwork img {
   border: 1px solid #414141;
   object-fit: cover;
-  width: 100%;
-  width: 280px;
+  width: 250px;
   height: 350px;
   padding: 10px;
   filter: grayscale(100%);
