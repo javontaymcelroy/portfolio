@@ -280,7 +280,7 @@ html {
   line-height: 30px;
   padding-right: 2%;
 }
-.works .work img {
+.works .work .project-image img {
   border: 1px solid #414141;
   padding: 10px;
   object-fit: cover;
@@ -291,10 +291,22 @@ html {
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
 }
-.works .work img:hover {
+.works .work .project-image img:hover {
   transition: all 0.3s ease-in-out;
   opacity: 1;
   filter: grayscale(0%);
+}
+.works .work #web-logo {
+  padding-top: 50px;
+  max-width: 40px;
+  max-height: 40px;
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.works .work #web-logo:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
 }
 .works .work .main-btn {
   width: 20%;

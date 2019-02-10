@@ -300,22 +300,38 @@ html {
             padding-right: 2%;
         }
 
-        img {
-            border: 1px solid #414141;
-            padding: 10px;
-            object-fit: cover;
-            max-width: 600px;
-            max-height: 400px;
-            cursor: pointer;
-            opacity: .5;
-            filter: grayscale(100%);
-            transition: all .3s ease-in-out;
+        .project-image {
+            img {
+                border: 1px solid #414141;
+                padding: 10px;
+                object-fit: cover;
+                max-width: 600px;
+                max-height: 400px;
+                cursor: pointer;
+                opacity: .5;
+                filter: grayscale(100%);
+                transition: all .3s ease-in-out;
+            }
+    
+            img:hover {
+                transition: all .3s ease-in-out;
+                opacity: 1;
+                filter: grayscale(0%);
+            }
         }
 
-        img:hover {
+        #web-logo {
+            padding-top: 50px;
+            max-width: 40px;
+            max-height: 40px;
+            opacity: .2;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
+
+        #web-logo:hover {
             transition: all .3s ease-in-out;
             opacity: 1;
-            filter: grayscale(0%);
         }
 
         .main-btn {
