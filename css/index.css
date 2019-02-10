@@ -199,10 +199,21 @@ html {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-@media (max-width: 500px) {
+.main-hero .main-btn a {
+  color: #414141;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .main-hero .main-btn a {
+    color: white;
+  }
+}
+@media (max-width: 800px) {
   .main-hero .main-btn {
-    width: 50%;
+    width: 60%;
     padding: 15px 20px 15px 20px;
+    border: 1px solid white;
+    color: white;
   }
 }
 .main-hero .main-btn:hover {
@@ -429,6 +440,7 @@ html {
 .works .artwork img {
   border: 1px solid #414141;
   object-fit: cover;
+  width: 100%;
   max-width: 250px;
   max-height: 350px;
   padding: 10px;
@@ -438,6 +450,7 @@ html {
 }
 @media (max-width: 800px) {
   .works .artwork img {
+    max-width: 320px;
     filter: grayscale(0%);
   }
 }

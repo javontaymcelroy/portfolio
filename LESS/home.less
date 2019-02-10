@@ -203,9 +203,20 @@ html {
         cursor: pointer;
         transition: all .5s ease;
 
-        @media (max-width: 500px){
-            width: 50%;
+        a {
+            color: #414141;;
+            text-decoration: none;
+
+            @media (max-width: 800px){
+                color: white;
+            }
+        }
+
+        @media (max-width: 800px){
+            width: 60%;
             padding: 15px 20px 15px 20px;
+            border: 1px solid white;
+            color: white;
         }
     }
 
@@ -445,6 +456,7 @@ html {
         img {
             border: 1px solid #414141;
             object-fit: cover;
+            width: 100%;
             max-width: 250px;
             max-height: 350px;
             padding: 10px;
@@ -453,6 +465,7 @@ html {
             transition: all .3s ease-in-out;
 
             @media (max-width: 800px){
+                max-width: 320px;
                 filter: grayscale(0%);
             }
         }
