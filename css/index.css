@@ -1,5 +1,5 @@
 html {
-  background-color: #050505;
+  background-color: #080808;
 }
 .border-wrapper {
   width: 100%;
@@ -278,7 +278,7 @@ html {
 }
 .main-hero .main-btn {
   width: 50%;
-  background: #050505;
+  background: #080808;
   border: 1px solid #292929;
   margin-top: 40px;
   padding: 20px 20px 20px 20px;
@@ -312,7 +312,7 @@ html {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #050505;
+  color: #080808;
 }
 .scroll-next {
   width: auto;
@@ -399,7 +399,7 @@ html {
 }
 .works .work {
   width: auto;
-  background: #050505;
+  background: #080808;
   padding: 2% 2% 2% 2%;
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;
@@ -515,7 +515,7 @@ html {
 }
 .works .work .main-btn {
   width: 20%;
-  background: #050505;
+  background: #080808;
   border: 1px solid #181818;
   text-decoration: none !important;
   color: #181818;
@@ -545,7 +545,7 @@ html {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #050505;
+  color: #080808;
 }
 .works .artwork {
   display: grid;
@@ -606,7 +606,7 @@ html {
 }
 .works .main-btn-art {
   width: 20%;
-  background: #050505;
+  background: #080808;
   border: 1px solid #181818;
   text-decoration: none !important;
   color: #181818;
@@ -634,7 +634,7 @@ html {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #050505;
+  color: #080808;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
