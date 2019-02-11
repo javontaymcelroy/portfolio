@@ -105,7 +105,7 @@ html {
   top: 0;
   right: 0;
   z-index: 1000;
-  background: #080808;
+  background: #050505;
   border: 1px solid #181818;
   width: 0%;
   height: 100%;
@@ -138,6 +138,7 @@ html {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  z-index: 500;
 }
 @media (max-width: 800px) {
   .overlay .overlay__content {
@@ -145,19 +146,37 @@ html {
   }
 }
 .overlay .overlay__content a {
+  position: relative;
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   text-decoration: none;
   color: white;
   padding: 50px;
   font-size: 1.5rem;
   display: block;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 20px;
   transition: 0.1s ease-in-out;
 }
 .overlay .overlay__content a:hover {
   transition: 0.1s ease-in-out;
   color: grey;
+}
+.overlay .page_n {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 15%;
+  left: 47%;
+}
+.overlay .page_n h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #181818;
+  font-size: 5.5rem;
+  font-weight: 700;
+  padding-top: 38px;
+  opacity: 0.4;
 }
 .main-hero {
   height: 100vh;
@@ -235,10 +254,10 @@ html {
 .main-hero .hero-title h1 {
   display: inline;
   font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+  font-weight: 500;
   text-shadow: 0px 0px 30px black;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 4px;
 }
 @media (max-width: 500px) {
