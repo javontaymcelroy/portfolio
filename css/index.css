@@ -34,10 +34,28 @@ html {
   width: 35px;
   height: 30px;
 }
+.nav-placeholder .nav-title {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 0.8rem;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #181818;
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 40px;
+}
+@media (max-width: 500px) {
+  .nav-placeholder .nav-title {
+    display: none;
+  }
+}
 .nav-placeholder .mobile-nav {
   position: fixed;
   right: 30px;
-  top: 20px;
+  top: 27px;
   width: 50px;
   height: 50px;
   display: flex;
@@ -141,39 +159,6 @@ html {
   transition: 0.1s ease-in-out;
   color: grey;
 }
-.ball {
-  opacity: 1;
-  animation: heroballfade 1s ease-in-out;
-  animation-direction: alternate-reverse;
-  z-index: 500;
-}
-.ball .left_ball {
-  position: absolute;
-  z-index: 500;
-  left: 55%;
-  bottom: 55%;
-  max-width: 80px;
-  max-height: 80px;
-  animation: heroball 2s ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes heroball {
-  from {
-    bottom: 55%;
-  }
-  to {
-    bottom: 52%;
-  }
-}
-@keyframes heroballfade {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .main-hero {
   height: 100vh;
   width: 100%;
@@ -258,7 +243,7 @@ html {
 }
 @media (max-width: 500px) {
   .main-hero .hero-title h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 .main-hero .hero-title p {
@@ -297,14 +282,14 @@ html {
 }
 @media (max-width: 800px) {
   .main-hero .main-btn a {
-    color: white;
+    color: #292929;
   }
 }
 @media (max-width: 800px) {
   .main-hero .main-btn {
     width: 60%;
     padding: 15px 20px 15px 20px;
-    border: 1px solid white;
+    border: 1px solid #292929;
     color: white;
   }
 }
@@ -537,7 +522,7 @@ html {
 }
 @media (max-width: 500px) {
   .works .work .main-btn {
-    width: 50%;
+    width: 83%;
     margin-top: 20px;
   }
 }
