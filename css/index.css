@@ -1,5 +1,13 @@
 html {
   background-color: #080808;
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  width: 8px;
+  background: #080808;
+}
+html ::-webkit-scrollbar-thumb {
+  background: white;
 }
 .border-wrapper {
   width: 100%;
@@ -39,6 +47,7 @@ html {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 0.8rem;
+  font-weight: 500;
   padding-bottom: 40px;
   border-bottom: 1px solid #181818;
   color: white;
@@ -122,14 +131,14 @@ html {
   right: 40px;
 }
 .overlay .closeBtn:hover {
-  animation: spin 1s ease-in-out;
+  animation: spin 0.5s ease-in-out;
 }
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
 }
 .overlay .overlay__content {
@@ -169,6 +178,17 @@ html {
   position: absolute;
   top: 15%;
   left: 47%;
+}
+@media (max-width: 1024px) {
+  .overlay .page_n {
+    left: 45%;
+  }
+}
+@media (max-width: 800px) {
+  .overlay .page_n {
+    left: 35%;
+    top: 10%;
+  }
 }
 .overlay .page_n h3 {
   font-family: 'Roboto', sans-serif;
@@ -281,7 +301,10 @@ html {
   }
 }
 .main-hero .main-btn {
-  width: 50%;
+  position: absolute;
+  left: 39%;
+  top: 80%;
+  width: 20%;
   background: #080808;
   border: 1px solid #292929;
   margin-top: 40px;
@@ -310,6 +333,11 @@ html {
     padding: 15px 20px 15px 20px;
     border: 1px solid #292929;
     color: white;
+  }
+}
+@media (max-width: 500px) {
+  .main-hero .main-btn {
+    left: 15%;
   }
 }
 .main-hero .main-btn:hover {
@@ -348,6 +376,11 @@ html {
   margin: 0 10px 0 0;
   padding-top: 0!important;
 }
+@media (max-width: 500px) {
+  .scroll-next {
+    display: none;
+  }
+}
 .works {
   padding-top: 150px;
   position: relative;
@@ -374,8 +407,8 @@ html {
   font-size: 3rem;
   color: white;
   text-transform: uppercase;
-  line-height: 50px;
-  letter-spacing: 2px;
+  line-height: 80px;
+  letter-spacing: 10px;
   position: relative;
   margin-bottom: 0.5rem;
   font-weight: 700;

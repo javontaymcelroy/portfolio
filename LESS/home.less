@@ -1,5 +1,15 @@
 html {
     background-color: @darkgrey;
+    scroll-behavior: smooth;
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+        background: @darkgrey;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: white;
+    }
 }
 
 .border-wrapper {
@@ -44,6 +54,7 @@ html {
         text-transform: uppercase;
         letter-spacing: 10px;
         font-size: .8rem;
+        font-weight: 500;
         padding-bottom: 40px;
         border-bottom: 1px solid @lightgrey;
         color: white;
@@ -139,7 +150,7 @@ html {
     }
 
     .closeBtn:hover {
-        animation: spin 1s ease-in-out;
+        animation: spin .5s ease-in-out;
     }
 
     @keyframes spin {
@@ -147,7 +158,7 @@ html {
             transform: rotate(0deg);
         }
         100% {
-            transform: rotate(180deg);
+            transform: rotate(90deg);
         }
     }
 
@@ -189,6 +200,15 @@ html {
         position: absolute;
         top: 15%;
         left: 47%;
+
+        @media (max-width: 1024px){
+            left: 45%;
+        }
+
+        @media (max-width:800px){
+            left: 35%;
+            top: 10%;
+        }
 
         h3 {
             font-family: 'Roboto', sans-serif;
@@ -295,7 +315,10 @@ html {
     }
 
     .main-btn {
-        width: 50%;
+        position: absolute;
+        left: 39%;
+        top: 80%;
+        width: 20%;
         background: @darkgrey;
         border: 1px solid @btngrey;
         margin-top: 40px;
@@ -323,6 +346,10 @@ html {
             padding: 15px 20px 15px 20px;
             border: 1px solid @btngrey;
             color: white;
+        }
+
+        @media (max-width: 500px){
+            left: 15%;
         }
     }
 
@@ -366,6 +393,10 @@ html {
         margin: 0 10px 0 0;
         padding-top: 0!important;
     }
+
+    @media (max-width: 500px){
+        display: none;
+    }
 }
 
 .works {
@@ -392,8 +423,8 @@ html {
             font-size: 3rem;
             color: white;
             text-transform: uppercase;
-            line-height: 50px;
-            letter-spacing: 2px;
+            line-height: 80px;
+            letter-spacing: 10px;
             position: relative;
             margin-bottom: .5rem;
             font-weight: 700;
