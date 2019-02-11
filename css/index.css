@@ -1,5 +1,5 @@
 html {
-  background-color: #191919;
+  background-color: #050505;
 }
 .border-wrapper {
   width: 100%;
@@ -11,7 +11,7 @@ html {
   height: 100%;
   position: relative;
   display: inline-block;
-  border-right: 1px solid #414141;
+  border-right: 1px solid #181818;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   animation: bordergrow 2s;
   animation-direction: alternate-reverse;
@@ -31,8 +31,8 @@ html {
   z-index: 1200;
 }
 .nav-placeholder .logo img {
-  width: 30px;
-  height: 25px;
+  width: 35px;
+  height: 30px;
 }
 .nav-placeholder .mobile-nav {
   position: fixed;
@@ -88,6 +88,7 @@ html {
   right: 0;
   z-index: 1000;
   background: #080808;
+  border: 1px solid #181818;
   width: 0%;
   height: 100%;
   overflow-x: hidden;
@@ -115,7 +116,7 @@ html {
 }
 .overlay .overlay__content {
   position: relative;
-  top: 20%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -134,11 +135,44 @@ html {
   display: block;
   text-transform: uppercase;
   letter-spacing: 5px;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .overlay .overlay__content a:hover {
-  transition: 0.3s ease-in-out;
-  color: #ffd700;
+  transition: 0.1s ease-in-out;
+  color: grey;
+}
+.ball {
+  opacity: 1;
+  animation: heroballfade 1s ease-in-out;
+  animation-direction: alternate-reverse;
+  z-index: 500;
+}
+.ball .left_ball {
+  position: absolute;
+  z-index: 500;
+  left: 55%;
+  bottom: 55%;
+  max-width: 80px;
+  max-height: 80px;
+  animation: heroball 2s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes heroball {
+  from {
+    bottom: 55%;
+  }
+  to {
+    bottom: 52%;
+  }
+}
+@keyframes heroballfade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 .main-hero {
   height: 100vh;
@@ -149,7 +183,6 @@ html {
 .main-hero img {
   width: 500px;
   height: 500px;
-  filter: grayscale(100%);
   display: flex;
   position: absolute;
   margin: auto;
@@ -158,6 +191,7 @@ html {
   left: 0;
   bottom: 0;
   align-self: center;
+  filter: brightness(1.2);
   opacity: 1;
   transition: 0.3s ease-in-out;
   animation: heroimg 3s ease-in-out;
@@ -178,8 +212,7 @@ html {
   }
 }
 .main-hero img:hover {
-  transition: 0.3s ease-in-out;
-  filter: grayscale(0%);
+  filter: brightness(1.5);
 }
 .main-hero .hero-title {
   width: 500px;
@@ -217,10 +250,10 @@ html {
 .main-hero .hero-title h1 {
   display: inline;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
+  text-shadow: 0px 0px 30px black;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 4px;
 }
 @media (max-width: 500px) {
@@ -235,6 +268,7 @@ html {
   display: inline-block;
   text-transform: uppercase;
   margin-top: 20px;
+  text-shadow: 0px 0px 30px black;
 }
 @media (max-width: 500px) {
   .main-hero .hero-title p {
@@ -243,14 +277,14 @@ html {
   }
 }
 .main-hero .main-btn {
-  width: 40%;
-  background: #191919;
-  border: 1px solid #414141;
-  margin-top: 20px;
+  width: 50%;
+  background: #050505;
+  border: 1px solid #292929;
+  margin-top: 40px;
   padding: 20px 20px 20px 20px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 2.5px;
-  color: #414141;
+  color: #292929;
   text-transform: uppercase;
   font-size: 0.8rem;
   text-align: center;
@@ -258,7 +292,7 @@ html {
   transition: all 0.5s ease;
 }
 .main-hero .main-btn a {
-  color: #414141;
+  color: #292929;
   text-decoration: none;
 }
 @media (max-width: 800px) {
@@ -278,7 +312,7 @@ html {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #191919;
+  color: #050505;
 }
 .scroll-next {
   width: auto;
@@ -313,8 +347,8 @@ html {
 .works {
   padding-top: 150px;
   position: relative;
-  border-top: 1px solid #414141;
-  border-bottom: 1px solid #414141;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
 }
 @media (max-width: 500px) {
   .works {
@@ -365,10 +399,10 @@ html {
 }
 .works .work {
   width: auto;
-  background: #191919;
+  background: #050505;
   padding: 2% 2% 2% 2%;
-  border-top: 1px solid #414141;
-  border-bottom: 1px solid #414141;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
   display: flex;
   flex-direction: row;
   margin-bottom: 10%;
@@ -390,12 +424,13 @@ html {
 }
 .works .work h2 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   display: inline-block;
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
   line-height: 0.9;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position: relative;
   margin-bottom: 0.5rem;
 }
@@ -428,7 +463,7 @@ html {
   }
 }
 .works .work .project-image img {
-  border: 1px solid #414141;
+  border: 1px solid #181818;
   padding: 10px;
   object-fit: cover;
   max-width: 600px;
@@ -480,10 +515,10 @@ html {
 }
 .works .work .main-btn {
   width: 20%;
-  background: #191919;
-  border: 1px solid #414141;
+  background: #050505;
+  border: 1px solid #181818;
   text-decoration: none !important;
-  color: #414141;
+  color: #181818;
   margin-top: 50px;
   padding: 20px 20px 20px 20px;
   font-family: 'Roboto', sans-serif;
@@ -510,7 +545,7 @@ html {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #191919;
+  color: #050505;
 }
 .works .artwork {
   display: grid;
@@ -533,7 +568,7 @@ html {
   }
 }
 .works .artwork img {
-  border: 1px solid #414141;
+  border: 1px solid #181818;
   object-fit: cover;
   width: 250px;
   height: 350px;
@@ -571,10 +606,10 @@ html {
 }
 .works .main-btn-art {
   width: 20%;
-  background: #191919;
-  border: 1px solid #414141;
+  background: #050505;
+  border: 1px solid #181818;
   text-decoration: none !important;
-  color: #414141;
+  color: #181818;
   margin: 50px auto;
   padding: 20px 20px 20px 20px;
   font-family: 'Roboto', sans-serif;
@@ -599,7 +634,7 @@ html {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #191919;
+  color: #050505;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
