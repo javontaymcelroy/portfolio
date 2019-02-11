@@ -20,7 +20,7 @@ html ::-webkit-scrollbar-thumb {
   height: 100%;
   position: relative;
   display: inline-block;
-  border-right: 1px solid #181818;
+  border-right: 1px solid #2a2a2a;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   animation: bordergrow 2s;
   animation-direction: alternate-reverse;
@@ -50,7 +50,7 @@ html ::-webkit-scrollbar-thumb {
   font-size: 0.8rem;
   font-weight: 500;
   padding-bottom: 40px;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid #2a2a2a;
   color: white;
   position: absolute;
   text-align: center;
@@ -118,7 +118,7 @@ html ::-webkit-scrollbar-thumb {
   right: 0;
   z-index: 1000;
   background: #050505;
-  border: 1px solid #181818;
+  border: 1px solid #2a2a2a;
   width: 0%;
   height: 100%;
   overflow-x: hidden;
@@ -132,6 +132,7 @@ html ::-webkit-scrollbar-thumb {
   position: absolute;
   top: 20px;
   right: 40px;
+  cursor: pointer;
 }
 .overlay .closeBtn:hover {
   animation: spin 0.5s ease-in-out;
@@ -209,7 +210,7 @@ html ::-webkit-scrollbar-thumb {
 }
 .overlay .page_n h3 {
   font-family: 'Roboto', sans-serif;
-  color: #181818;
+  color: #2a2a2a;
   font-size: 5.5rem;
   font-weight: 700;
   padding-top: 38px;
@@ -401,8 +402,8 @@ html ::-webkit-scrollbar-thumb {
 .works {
   padding-top: 150px;
   position: relative;
-  border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
   background-image: url("../assets/images/angel.png");
   background-size: 50.3%;
   background-repeat: no-repeat;
@@ -472,11 +473,11 @@ html ::-webkit-scrollbar-thumb {
   width: auto;
   background: #0d0d0d;
   padding: 2% 2% 2% 2%;
-  border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 }
 @media (max-width: 1024px) {
   .works .work {
@@ -538,7 +539,7 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 .works .work .project-image img {
-  border: 1px solid #181818;
+  border: 1px solid #2a2a2a;
   padding: 10px;
   object-fit: cover;
   max-width: 600px;
@@ -587,9 +588,9 @@ html ::-webkit-scrollbar-thumb {
 .works .work .main-btn {
   width: 20%;
   background: #0d0d0d;
-  border: 1px solid #181818;
+  border: 1px solid #2a2a2a;
   text-decoration: none !important;
-  color: #181818;
+  color: #2a2a2a;
   margin-top: 50px;
   padding: 20px 20px 20px 20px;
   font-family: 'Roboto', sans-serif;
@@ -624,6 +625,8 @@ html ::-webkit-scrollbar-thumb {
   justify-content: space-evenly;
   justify-items: center;
   grid-row-gap: 45px;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 7%;
 }
 @media (max-width: 1024px) {
   .works .artwork {
@@ -639,7 +642,7 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 .works .artwork img {
-  border: 1px solid #181818;
+  border: 1px solid #2a2a2a;
   object-fit: cover;
   width: 250px;
   height: 350px;
@@ -672,9 +675,9 @@ html ::-webkit-scrollbar-thumb {
 .works .main-btn-art {
   width: 20%;
   background: #0d0d0d;
-  border: 1px solid #181818;
+  border: 1px solid #2a2a2a;
   text-decoration: none !important;
-  color: #181818;
+  color: #2a2a2a;
   margin: 50px auto;
   padding: 20px 20px 20px 20px;
   font-family: 'Roboto', sans-serif;
