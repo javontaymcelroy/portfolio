@@ -404,18 +404,16 @@ html ::-webkit-scrollbar-thumb {
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;
   background-image: url("../assets/images/angel.png");
-  background-size: 640px;
+  background-size: 50.3%;
   background-repeat: no-repeat;
 }
 @media (max-width: 1024px) {
   .works {
-    background-size: 516px;
     padding-top: 46px;
   }
 }
 @media (max-width: 500px) {
   .works {
-    background-size: 280px;
     padding-top: 50px;
   }
 }
