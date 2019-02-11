@@ -1,10 +1,10 @@
 html {
-  background-color: #080808;
   scroll-behavior: smooth;
+  background: #0d0d0d;
 }
 html ::-webkit-scrollbar {
   width: 8px;
-  background: #080808;
+  background: #0d0d0d;
 }
 html ::-webkit-scrollbar-thumb {
   background: white;
@@ -37,6 +37,7 @@ html ::-webkit-scrollbar-thumb {
   left: 30px;
   top: 30px;
   z-index: 1200;
+  mix-blend-mode: difference;
 }
 .nav-placeholder .logo img {
   width: 35px;
@@ -72,6 +73,8 @@ html ::-webkit-scrollbar-thumb {
   justify-content: center;
   align-content: center;
   opacity: 1;
+  mix-blend-mode: difference;
+  cursor: pointer;
 }
 .nav-placeholder .mobile-nav span {
   transition: all 0.3s ease-in-out;
@@ -83,6 +86,7 @@ html ::-webkit-scrollbar-thumb {
   position: absolute;
   height: 3px;
   background: white;
+  mix-blend-mode: difference;
 }
 .nav-placeholder .mobile-nav span:nth-child(2) {
   transform-origin: right center;
@@ -319,7 +323,7 @@ html ::-webkit-scrollbar-thumb {
   left: 39%;
   top: 80%;
   width: 20%;
-  background: #080808;
+  background: #0d0d0d;
   border: 1px solid #292929;
   margin-top: 40px;
   padding: 20px 20px 20px 20px;
@@ -358,7 +362,7 @@ html ::-webkit-scrollbar-thumb {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
   background: white;
-  color: #080808;
+  color: #0d0d0d;
 }
 .scroll-next {
   width: auto;
@@ -400,6 +404,7 @@ html ::-webkit-scrollbar-thumb {
   position: relative;
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;
+  background: white;
 }
 @media (max-width: 500px) {
   .works {
@@ -419,7 +424,7 @@ html ::-webkit-scrollbar-thumb {
   font-family: 'Roboto', sans-serif;
   display: inline-block;
   font-size: 3rem;
-  color: white;
+  color: #0d0d0d;
   text-transform: uppercase;
   line-height: 80px;
   letter-spacing: 10px;
@@ -440,7 +445,7 @@ html ::-webkit-scrollbar-thumb {
 .works .work-title p {
   width: 70%;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #0d0d0d;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   margin-top: 20px;
@@ -454,9 +459,10 @@ html ::-webkit-scrollbar-thumb {
 }
 .works .work {
   width: auto;
-  background: #080808;
+  background: #0d0d0d;
   padding: 2% 2% 2% 2%;
   border-top: 1px solid #181818;
+  background: white;
   border-bottom: 1px solid #181818;
   display: flex;
   flex-direction: row;
@@ -482,7 +488,7 @@ html ::-webkit-scrollbar-thumb {
   font-weight: 500;
   display: inline-block;
   font-size: 1.5rem;
-  color: white;
+  color: #0d0d0d;
   text-transform: uppercase;
   line-height: 0.9;
   letter-spacing: 3px;
@@ -508,7 +514,7 @@ html ::-webkit-scrollbar-thumb {
 .works .work p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
-  color: white;
+  color: #0d0d0d;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   margin-top: 20px;
@@ -528,35 +534,32 @@ html ::-webkit-scrollbar-thumb {
   max-width: 600px;
   max-height: 400px;
   cursor: pointer;
-  opacity: 0.5;
-  filter: grayscale(100%);
+  opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1024px) {
   .works .work .project-image img {
     max-width: 1024px;
-    filter: grayscale(0%);
   }
 }
 @media (max-width: 800px) {
   .works .work .project-image img {
     max-width: 300px;
-    filter: grayscale(0%);
     opacity: 1;
   }
 }
 .works .work .project-image img:hover {
   transition: all 0.3s ease-in-out;
   opacity: 1;
-  filter: grayscale(0%);
 }
 .works .work #web-logo {
   padding-top: 50px;
   max-width: 40px;
   max-height: 40px;
-  opacity: 0.2;
+  opacity: 0.5;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  mix-blend-mode: difference;
 }
 @media (max-width: 1024px) {
   .works .work #web-logo {
@@ -574,7 +577,7 @@ html ::-webkit-scrollbar-thumb {
 }
 .works .work .main-btn {
   width: 20%;
-  background: #080808;
+  background: white;
   border: 1px solid #181818;
   text-decoration: none !important;
   color: #181818;
@@ -603,8 +606,8 @@ html ::-webkit-scrollbar-thumb {
 .works .work .main-btn:hover {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
-  background: white;
-  color: #080808;
+  background: #0d0d0d;
+  color: white;
 }
 .works .artwork {
   display: grid;
@@ -632,7 +635,6 @@ html ::-webkit-scrollbar-thumb {
   width: 250px;
   height: 350px;
   padding: 10px;
-  filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1024px) {
@@ -640,7 +642,6 @@ html ::-webkit-scrollbar-thumb {
     width: 100%;
     max-width: 280px;
     max-height: 350px;
-    filter: grayscale(0%);
   }
 }
 @media (max-width: 800px) {
@@ -659,13 +660,9 @@ html ::-webkit-scrollbar-thumb {
     margin: 0px 0px 20px 0px;
   }
 }
-.works .artwork img:hover {
-  transition: all 0.3s ease-in-out;
-  filter: grayscale(0%);
-}
 .works .main-btn-art {
   width: 20%;
-  background: #080808;
+  background: white;
   border: 1px solid #181818;
   text-decoration: none !important;
   color: #181818;
@@ -692,8 +689,8 @@ html ::-webkit-scrollbar-thumb {
 .works .main-btn-art:hover {
   transition: 0.5s ease-in-out;
   border: 1px solid white;
-  background: white;
-  color: #080808;
+  background: #0d0d0d;
+  color: white;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
