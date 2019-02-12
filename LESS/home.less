@@ -153,7 +153,6 @@ html {
 
     .closeBtn {
         text-decoration: none;
-        font-weight: bold;
         color: white;
         font-size: 3rem;
         position: absolute;
@@ -360,7 +359,7 @@ html {
         font-size: .8rem;
         text-align: center;
         cursor: pointer;
-        transition: all .5s ease;
+        transition: all .3s ease;
 
         a {
             color: @btngrey;
@@ -384,12 +383,13 @@ html {
     }
 
     .main-btn:hover {
-        transition: .5s ease-in-out;
+        transition: .3s ease-in-out;
         border: 1px solid white;
         background: white;
         color: @darkgrey;
     }
 }
+
 
 .scroll-next {
     width: auto;
@@ -399,6 +399,11 @@ html {
     position: absolute;
     display: flex;
     justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
     span {
         width: 1px;
@@ -450,7 +455,7 @@ html {
 
     .work-title {
         width: auto;
-        margin: 0 0 7% 16%;
+        margin: 0 0 7% 17%;
 
         @media (max-width: 1024px){
             margin: 0 0 5% 16%;
@@ -632,7 +637,7 @@ html {
             font-size: .8rem;
             text-align: center;
             cursor: pointer;
-            transition: .5s ease;
+            transition: .3s ease;
 
             @media (max-width: 1024px){
                 width: 80%;
@@ -646,7 +651,7 @@ html {
         }
     
         .main-btn:hover {
-            transition: .5s ease-in-out;
+            transition: .3s ease-in-out;
             border: 1px solid white;
             background: white;
             color: @darkgrey;
@@ -680,7 +685,7 @@ html {
             width: 250px;
             height: 350px;
             padding: 10px;
-            opacity: 1;
+            opacity: .7;
             cursor: pointer;
             transition: all .3s ease-in-out;
 
@@ -706,7 +711,7 @@ html {
         }
 
         #myImg:hover {
-            opacity: 0.7;
+            opacity: 1;
         }
 
     }
@@ -725,7 +730,7 @@ html {
         font-size: .8rem;
         text-align: center;
         cursor: pointer;
-        transition: .5s ease;
+        transition: .3s ease;
 
         @media (max-width: 1024px){
             width: 50%;
@@ -737,67 +742,123 @@ html {
     }
 
     .main-btn-art:hover {
-        transition: .5s ease-in-out;
+        transition: .3s ease-in-out;
         border: 1px solid white;
         background: white;
         color: @darkgrey;
     }
 
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto; 
-        background-color: @darkgrey;
+}
 
-        .modal-content {
-            margin: 0 auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
+.footer {
+    padding-top: 150px;
+    position: relative;
+    border-top: 1px solid @lightgrey;
+    border-bottom: 1px solid @lightgrey;
+    background-image: url("../assets/images/angel_flipped.png");
+    background-position-x: 101.4%;
+    background-size: 50.3%;
+    background-repeat: no-repeat;
 
-            @media (max-width: 700px){
-                width: 100%;
+
+    @media (max-width: 1024px){
+        //background-size: 516px;
+        padding-top: 46px;
+    }
+
+    @media (max-width: 500px){
+        //background-size: 280px;
+        padding-top: 50px;
+    }
+
+    .contact {
+
+    width: auto;
+    margin: 0 0 7% 17%;
+
+    @media (max-width: 1024px){
+        margin: 0 0 5% 16%;
+    }
+
+    @media (max-width: 500px){
+        margin: 0 0 10% 5%;
+    }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            line-height: 80px;
+            letter-spacing: 10px;
+            position: relative;
+            margin-bottom: .5rem;
+            font-weight: 700;
+
+            @media (max-width: 500px){
+                font-size: 1.2rem;
+                line-height: 35px;
+            }
+
+        }
+
+        p {
+            width: 70%;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-top: 20px; 
+            line-height: 30px;
+
+            @media (max-width: 500px){
+                font-size: .8rem;
+                width: 95%;
             }
         }
 
-        #caption {
-            margin: 0 auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: white;
-            padding: 10px 0;
-            height: 150px;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
-
-        @keyframes zoom {
-            from {transform:scale(0)}
-            to {transform:scale(1)}
-        }
-
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: white;
-            font-size: 30px;
-            transition: 0.3s;
-        }
-
-        .close:hover, .close:focus {
-            color: grey;
+        a {
             text-decoration: none;
-            cursor: pointer;
         }
-    }
+        .main-btn-contact {
+            width: 80%;
+            display: flex;
+            justify-content: center;
 
+            button {
+                width: 35%;
+                background: white;
+                border: 1px solid white;
+                text-decoration: none !important;
+                color: @lightgrey;
+                margin-top: 50px;
+                padding: 20px 20px 20px 20px;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2.5px;
+                text-transform: uppercase;
+                font-size: .8rem;
+                text-align: center;
+                cursor: pointer;
+                transition: .3s ease;
+    
+                @media (max-width: 1024px){
+                    width: 50%;
+                }
+    
+                @media (max-width: 500px){
+                    width: 64%;
+                }
+
+            }
+
+            button:hover {
+                transition: .3s ease-in-out;
+                border: 1px solid @lightgrey;
+                background: @darkgrey;
+                color: @lightgrey;
+            }
+        }
+
+    }
 }
