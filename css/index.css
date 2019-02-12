@@ -647,23 +647,25 @@ html ::-webkit-scrollbar-thumb {
     align-items: center;
   }
 }
-.works .artwork img {
+.works .artwork #myImg {
   border: 1px solid #2a2a2a;
   object-fit: cover;
   width: 250px;
   height: 350px;
   padding: 10px;
+  opacity: 1;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1024px) {
-  .works .artwork img {
+  .works .artwork #myImg {
     width: 100%;
     max-width: 280px;
     max-height: 350px;
   }
 }
 @media (max-width: 800px) {
-  .works .artwork img {
+  .works .artwork #myImg {
     width: 100%;
     max-width: 220px;
     max-height: 380px;
@@ -671,12 +673,15 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 500px) {
-  .works .artwork img {
+  .works .artwork #myImg {
     width: 100%;
     max-width: 290px;
     max-height: 400px;
     margin: 0px 0px 20px 0px;
   }
+}
+.works .artwork #myImg:hover {
+  opacity: 0.7;
 }
 .works .main-btn-art {
   width: 20%;
@@ -709,6 +714,63 @@ html ::-webkit-scrollbar-thumb {
   border: 1px solid white;
   background: white;
   color: #0d0d0d;
+}
+.works .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #0d0d0d;
+}
+.works .modal .modal-content {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+@media (max-width: 700px) {
+  .works .modal .modal-content {
+    width: 100%;
+  }
+}
+.works .modal #caption {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.works .modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 30px;
+  transition: 0.3s;
+}
+.works .modal .close:hover,
+.works .modal .close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <script src="jquery-1.10.2min.js"></script>
   <script src="main.js"></script>
+  <script src="modal.js"></script>
   <!-- End of HTML stuff -->
   <title>Javontay McElroy | Portfolio</title>
   <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
@@ -129,20 +130,29 @@
       </section>
       
       <div class="artwork">
-        <img src="assets/images/Kuzco-background.jpg">
-        <img src="assets/images/Trapical-Boi-Unedited.jpg">
-        <img src="assets/images/Zeus-Artwork.jpg">
-        <img src="assets/images/boy-3.jpg">
-        <img src="assets/images/high-rez-square.jpg">
-        <img src="assets/images/kehlani.jpg">
-        <img src="assets/images/Witch-Beyonce-final.jpg">
-        <img src="assets/images/XJ9.jpg">
-        <img src="assets/images/Manu.jpg">
-        <img src="assets/images/Poseidon 1_Final.JPG">
-        <img src="assets/images/Micah.jpg">
-        <img src="assets/images/Laur-final.jpg">
+        <img id="myImg" src="assets/images/Kuzco-background.jpg">
+        <img id="myImg" src="assets/images/Trapical-Boi-Unedited.jpg">
+        <img id="myImg" src="assets/images/Zeus-Artwork.jpg">
+        <img id="myImg" src="assets/images/boy-3.jpg">
+        <img id="myImg" src="assets/images/high-rez-square.jpg">
+        <img id="myImg" src="assets/images/kehlani.jpg">
+        <img id="myImg" src="assets/images/Witch-Beyonce-final.jpg">
+        <img id="myImg" src="assets/images/XJ9.jpg">
+        <img id="myImg" src="assets/images/Manu.jpg">
+        <img id="myImg" src="assets/images/Poseidon 1_Final.JPG">
+        <img id="myImg" src="assets/images/Micah.jpg">
+        <img id="myImg" src="assets/images/Laur-final.jpg">
       </div>
       <div class="main-btn-art" onclick=" window.open('https://www.instagram.com/thekingmuze', '_blank'); return false;">View More Artwork</div>
+
+      <div id="myModal" class="modal">
+        <!--Close Button-->
+        <span class="close">&times;</span>
+        <!--Modal Content (The Image)-->
+        <img class='modal-content' id="img01">
+        <!--Modal Caption (Image Text)-->
+        <div id="caption"></div>
+      </div>
   </section>
 </body>
 </html>
