@@ -401,7 +401,7 @@ html ::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 10px 0 0;
-  padding-top: 0!important;
+  padding-top: 0 !important;
 }
 @media (max-width: 500px) {
   .scroll-next {
@@ -413,7 +413,7 @@ html ::-webkit-scrollbar-thumb {
   position: relative;
   border-top: 1px solid #2a2a2a;
   border-bottom: 1px solid #2a2a2a;
-  background-image: url("../assets/images/angel.png");
+  background-image: url('../assets/images/angel.png');
   background-size: 50.3%;
   background-repeat: no-repeat;
 }
@@ -689,9 +689,9 @@ html ::-webkit-scrollbar-thumb {
 .works .main-btn-art {
   width: 20%;
   background: #0d0d0d;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #5c5c5c;
   text-decoration: none !important;
-  color: #2a2a2a;
+  color: #5c5c5c;
   margin: 50px auto;
   padding: 20px 20px 20px 20px;
   font-family: 'Roboto', sans-serif;
@@ -721,9 +721,9 @@ html ::-webkit-scrollbar-thumb {
 .footer {
   padding-top: 150px;
   position: relative;
-  border-top: 1px solid #2a2a2a;
-  border-bottom: 1px solid #2a2a2a;
-  background-image: url("../assets/images/angel_flipped.png");
+  border-top: 1px solid #5c5c5c;
+  border-bottom: 1px solid #5c5c5c;
+  background-image: url('../assets/images/angel_flipped.png');
   background-position-x: 101.4%;
   background-size: 50.3%;
   background-repeat: no-repeat;
