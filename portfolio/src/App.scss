@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+
+  .navigation {
+    position: relative;
+    z-index: 400;
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+    border-bottom: 1px solid rgb(32, 32, 32);
+
+    .logo {
+      width: 5vh;
+      margin-left: 2vh;
+      position: fixed;
+    }
+
+    .nav-title {
+      margin: 0 auto;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .mobile-nav {
+      position: fixed;
+      right: 0;
+      margin-right: 2vh;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .top-mobile {
+      display: inline-block;
+      width: 40px;
+      height: 4px;
+      background: white;
+      mix-blend-mode: difference;
+    }
+    .middle-mobile {
+      display: inline-block;
+      width: 30px;
+      height: 4px;
+      background: white;
+      mix-blend-mode: difference;
+      transition: all 0.2s ease-in-out;
+    }
+    .bottom-mobile {
+      display: inline-block;
+      width: 10px;
+      height: 4px;
+      background: white;
+      mix-blend-mode: difference;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .mobile-nav:hover {
+      .middle-mobile {
+        width: 40px;
+      }
+
+      .bottom-mobile {
+        width: 40px;
+      }
+    }
+  }
+
+  .hero-content {
+    position: absolute;
+    z-index: 500;
+    color: white;
+    text-align: left;
+    top: 40vh;
+    left: 40vh;
+
+    .hero-title {
+      font-weight: 500;
+      text-shadow: 0px 0px 30px black;
+      color: white;
+      font-size: 2rem;
+      letter-spacing: 4px;
+    }
+
+    .hero-caption {
+      color: white;
+      letter-spacing: 2.5px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-top: 20px;
+      text-shadow: 0px 0px 30px black;
+    }
+  }
+
+  .hero-image-container {
+    position: relative;
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+
+    .hero-image {
+      position: relative;
+      z-index: 400;
+      width: 60vh;
+      margin: 10vh auto 0;
+      opacity: 0.9;
+    }
+
+    .white-btn {
+      position: relative;
+      width: 28%;
+      margin: 3% auto 0;
+      padding: 1.5% 0;
+      border: 1px solid white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .white-btn:hover {
+      background: rgb(32, 32, 32);
+      border: 1px solid rgb(32, 32, 32);
+      color: white;
+    }
+  }
+
+  .scroll-down-container {
+    position: absolute;
+    z-index: 400;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .scroll-down {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 4px;
+      transform: rotate(90deg);
+    }
+
+    .scroll-line {
+      display: block;
+      width: 1px;
+      height: 100px;
+      background: white;
+    }
+  }
+
+  .border-grid {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .border {
+      height: 100vh;
+      width: 1px;
+      background: rgb(32, 32, 32);
+    }
+  }
+}
