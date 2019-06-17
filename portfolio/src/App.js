@@ -2,11 +2,12 @@
 import React from "react";
 import { Component } from "react";
 import Navigation from "./components/Navigation";
+import { Route } from "react-router-dom";
 
-// ===================== ASSETS ===================== //
-import heroImg from "./assets/images/hold_up.png";
 // ===================== STYLES ===================== //
 import "./App.scss";
+import Projects from "./components/Projects";
+import Home from "./components/Home";
 
 // ===================== COMPONENT ===================== //
 class App extends Component {
@@ -18,30 +19,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation />
-        <div className="hero-content">
-          <h1 className="hero-title">JAVONTAY McELROY</h1>
-          <h6 className="hero-caption">
-            Full Stack Web Developer | UI / UX Designer
-          </h6>
-        </div>
-        <div className="hero-image-container">
-          <img src={heroImg} className="hero-image" alt="hero" />
-          <button className="white-btn">See my Projects</button>
-        </div>
-        <div className="scroll-down-container">
-          <h1 className="scroll-down">Scroll down</h1>
-          <span className="scroll-line" />
-        </div>
-        <div className="border-grid">
-          <span className="border" />
-          <span className="border" />
-          <span className="border" />
-          <span className="border" />
-          <span className="border" />
-          <span className="border" />
-          <span className="border" />
-          <span className="border" />
-        </div>
+        <Route component={Home} exact path="/" />
+        <Route component={Projects} path="/projects" />
       </div>
     );
   }
