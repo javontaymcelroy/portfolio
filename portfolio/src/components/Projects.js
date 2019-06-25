@@ -10,20 +10,26 @@ import "./Projects.scss";
 class Projects extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      projects: this.props.projectsArray
+    };
   }
   render() {
     return (
       <div className="projects-container">
-        <div className="project">
-          <div className="project-caption">
-            <h1 className="project-title">Pokéstats</h1>
-            <h6 className="project-role">
-              Front-End Developer & UI / UX Designer
-            </h6>
+        {this.state.projects.map(project => (
+          <div className="project">
+            <div className="project-caption">
+              <h1 className="project-title">{project.projectName}</h1>
+              <h6 className="project-role">{project.projectRole}</h6>
+            </div>
+            <img
+              src={project.projectImg}
+              alt={project.projectName}
+              className="project-image"
+            />
           </div>
-          <img src={pokestats} alt="Pokéstats" className="project-image" />
-        </div>
+        ))}
       </div>
     );
   }
