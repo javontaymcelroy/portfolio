@@ -7,7 +7,21 @@ body {
   background: #0d0d0d;
 }
 
+body #projects {
+  background: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
