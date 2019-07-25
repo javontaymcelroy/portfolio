@@ -12,7 +12,9 @@ class Project extends Component {
   }
 
   render() {
-    const projectsArray = this.props.projectsArray;
+    const projectsArray = this.props.projectsArray.find(
+      project => `${project.id}` === this.state.id
+    );
     return (
       <div className="project-container">
         <h1>{projectsArray.projectName}</h1>

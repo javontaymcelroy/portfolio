@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 import Slider from "react-slick";
 
@@ -19,13 +20,7 @@ const Home = ({ projectsArray, artArray }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    afterChange: function(index) {
-      console.log(
-        `Slider Changed to: ${index + 1}, background: #222; color: #ffffff`
-      );
-    }
+    slidesToScroll: 3
   };
 
   var settingsArt = {
@@ -54,26 +49,28 @@ const Home = ({ projectsArray, artArray }) => {
         </div>
         <div className="hero-image-container">
           <img src={heroImg} className="hero-image" alt="hero" />
-          <Link to="/projects" className="general-links">
+          <a href="#projects" className="general-links">
             <button className="white-btn">See my Projects</button>
-          </Link>
+          </a>
         </div>
         <div className="scroll-down-container">
           <h1 className="scroll-down">Contact Me</h1>
           <span className="scroll-line" />
         </div>
 
-        <div className="break">
-          <img src={angel} alt="projects-break" className="angel" />
-          <div className="break-title-left">
-            <h1>Projects Crafted With Love</h1>
-            <p>
-              Here lies a selection of some of my best and favorite projects as
-              a Web Developer that I am incredibly proud to have been apart of
-              and help make possible.
-            </p>
+        <ScrollableAnchor id={"projects"}>
+          <div className="break">
+            <img src={angel} alt="projects-break" className="angel" />
+            <div className="break-title-left">
+              <h1>Projects Crafted With Love</h1>
+              <p>
+                Here lies a selection of some of my best and favorite projects
+                as a Web Developer that I am incredibly proud to have been apart
+                of and help make possible.
+              </p>
+            </div>
           </div>
-        </div>
+        </ScrollableAnchor>
 
         <Slider {...settings}>
           {projectsArray.map(project => (

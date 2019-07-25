@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "react-responsive-carousel": "^3.1.49",
+    "react-scrollable-anchor": "^0.6.1",
     "react-slick": "^0.24.0"
   }
 }
