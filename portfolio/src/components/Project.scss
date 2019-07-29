@@ -1,4 +1,60 @@
 .project-container {
-  border: 1px solid red;
   color: white;
+  display: flex;
+
+  .single-project-image {
+    margin: 0vh 9vh;
+    width: 60%;
+    height: 91vh;
+    object-fit: cover;
+  }
+
+  .project-content {
+    margin-top: 5vh;
+    text-align: left;
+    width: 28%;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    p {
+      line-height: 30px;
+      color: grey;
+    }
+
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+
+  .button-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+    a {
+      width: 48%;
+      padding: 4% 0;
+      margin-bottom: 4vh;
+      border: 1px solid white;
+      outline: none;
+      background: white;
+      color: rgb(32, 32, 32);
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      background: rgb(32, 32, 32);
+      border: 1px solid rgb(32, 32, 32);
+      color: white;
+    }
+  }
 }

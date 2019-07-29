@@ -19,8 +19,10 @@ const Home = ({ projectsArray, artArray }) => {
     dots: true,
     infinite: true,
     speed: 500,
+    swipeToSlide: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 1,
+    cssEase: "linear"
   };
 
   var settingsArt = {
@@ -54,7 +56,9 @@ const Home = ({ projectsArray, artArray }) => {
           </a>
         </div>
         <div className="scroll-down-container">
-          <h1 className="scroll-down">Contact Me</h1>
+          <a href="#contact" className="scroll-down">
+            Contact Me
+          </a>
           <span className="scroll-line" />
         </div>
 
@@ -64,9 +68,9 @@ const Home = ({ projectsArray, artArray }) => {
             <div className="break-title-left">
               <h1>Projects Crafted With Love</h1>
               <p>
-                Here lies a selection of some of my best and favorite projects
-                as a Web Developer that I am incredibly proud to have been apart
-                of and help make possible.
+                Here is a selection of some of my best and favorite projects as
+                a Web Developer that I am incredibly proud to have been apart of
+                and help make possible.
               </p>
             </div>
           </div>
@@ -76,7 +80,11 @@ const Home = ({ projectsArray, artArray }) => {
           {projectsArray.map(project => (
             <div>
               <Link to={`/${project.id}`}>
-                <img src={project.projectImg} className="project-image" />
+                <img
+                  src={project.projectThumbnail}
+                  className="project-image"
+                  alt={project.projectName}
+                />
                 <div className="project-info">
                   <p className="project-title">{project.projectName}</p>
                   <p className="project-stack">
@@ -103,15 +111,54 @@ const Home = ({ projectsArray, artArray }) => {
         <Slider {...settingsArt}>
           {artArray.map(piece => (
             <div>
-              <img src={piece.artImg} className="art-image" />
+              <img src={piece.artImg} className="art-image" alt="artwork" />
             </div>
           ))}
         </Slider>
 
+        <ScrollableAnchor id={"contact"}>
+          <div className="break">
+            <div className="break-title-center">
+              <h1>LIKE WHAT YOU SEE? I'M ONLY ONE MESSAGE AWAY!</h1>
+              <p>
+                I AM ALWAYS READY TO JOIN AN ENERGETIC AND AWESOME TEAM THAT CAN
+                SPLIT CHALLENGES AND SHARE WINS! LET'S DO THIS!
+              </p>
+              <a
+                href="mailto:javontay.r.mcelroy@gmail.com"
+                className="contact-btn"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+        </ScrollableAnchor>
+
         <div className="social-links">
-          <img src={github} alt="github" className="social-icon" />
-          <img src={instagram} alt="instagram" className="social-icon" />
-          <img src={twitter} alt="twitter" className="social-icon" />
+          <a
+            href="https://github.com/javontaymcelroy"
+            target="_blank"
+            className="link-wrap"
+            rel="noopener noreferrer"
+          >
+            <img src={github} alt="github" className="social-icon" />
+          </a>
+          <a
+            href="https://instagram.com/thekingmuze"
+            target="_blank"
+            className="link-wrap"
+            rel="noopener noreferrer"
+          >
+            <img src={instagram} alt="instagram" className="social-icon" />
+          </a>
+          <a
+            href="https://twitter.com/thekingmuze"
+            target="_blank"
+            className="link-wrap"
+            rel="noopener noreferrer"
+          >
+            <img src={twitter} alt="twitter" className="social-icon" />
+          </a>
         </div>
         <div className="border-grid">
           <span className="border" />

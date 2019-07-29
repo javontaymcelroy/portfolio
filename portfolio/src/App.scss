@@ -10,7 +10,7 @@
     z-index: 999999999;
     display: flex;
     align-items: center;
-    padding: 2% 0;
+    padding: 1% 0;
     border-bottom: 1px solid rgb(32, 32, 32);
 
     .logo {
@@ -277,6 +277,50 @@
         letter-spacing: 2px;
       }
     }
+
+    .break-title-center {
+      position: absolute;
+      margin-top: 5vh;
+      left: 35vh;
+      text-align: center;
+      width: 65%;
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding-bottom: 3%;
+      }
+
+      h1,
+      p {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+
+    .contact-btn {
+      width: 28%;
+      padding: 2% 15%;
+      background: white;
+      border: 1px solid white;
+      color: rgb(32, 32, 32);
+      outline: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .contact-btn:hover {
+      background: rgb(32, 32, 32);
+      border: 1px solid rgb(32, 32, 32);
+      color: white;
+    }
   }
 
   .center {
@@ -292,13 +336,8 @@
     width: 58vh;
     height: 30vh;
     object-fit: cover;
-    filter: grayscale(0);
     cursor: pointer;
     transition: 0.2s ease-in-out;
-  }
-
-  .project-image:hover {
-    filter: grayscale(0);
   }
 
   .project-image:hover + .project-info {
@@ -321,7 +360,7 @@
   }
 
   .art-image {
-    width: 60vh;
+    width: 58vh;
     height: 80vh;
     object-fit: cover;
   }
