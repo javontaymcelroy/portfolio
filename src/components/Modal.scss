@@ -22,7 +22,7 @@
     justify-content: space-evenly;
     a {
       color: black;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       font-weight: 900;
       transition: all 0.2s ease-in-out;
@@ -30,6 +30,7 @@
 
     a:hover {
       color: rgb(126, 126, 126);
+      text-decoration: line-through;
     }
 
     .close-btn {

@@ -8,21 +8,21 @@ const Modal = ({ handleClose, show }) => {
       <div className="modal">
         <div className="links">
           <a
-            href="https://instagram.com/thekingmuze"
+            href="https://www.linkedin.com/in/javontay-mcelroy-663b81bb/"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
           </a>
           <a
-            href="https://instagram.com/thekingmuze"
+            href="https://github.com/javontaymcelroy"
             target="_blank"
             rel="noopener noreferrer"
           >
             Github
           </a>
           <a
-            href="https://instagram.com/thekingmuze"
+            href="https://www.behance.net/javontay"
             target="_blank"
             rel="noopener noreferrer"
           >
