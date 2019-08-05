@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ScrollableAnchor from "react-scrollable-anchor";
+import { Progress } from "react-sweet-progress";
+import "react-sweet-progress/lib/style.css";
 
 import Slider from "react-slick";
 
@@ -14,16 +16,16 @@ import angel from "../assets/images/angel.png";
 import "../App.scss";
 
 const Home = ({ projectsArray, artArray }) => {
-  var settings = {
-    className: "center",
-    dots: true,
-    infinite: true,
-    speed: 500,
-    swipeToSlide: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    cssEase: "linear"
-  };
+  // var settings = {
+  //   className: "center",
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   swipeToSlide: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   cssEase: "linear"
+  // };
 
   var settingsArt = {
     className: "center",
@@ -39,6 +41,9 @@ const Home = ({ projectsArray, artArray }) => {
       );
     }
   };
+
+  const color = "white";
+  const trailColor = "#474747";
 
   return (
     <>
@@ -68,7 +73,7 @@ const Home = ({ projectsArray, artArray }) => {
             <div className="break-title-left">
               <h1>Projects Crafted With Love</h1>
               <p>
-                Here is a selection of some of my best and favorite projects as
+                Here's a collection of some of my best and favorite projects as
                 a Web Developer that I am incredibly proud to have been apart of
                 and help make possible.
               </p>
@@ -76,7 +81,7 @@ const Home = ({ projectsArray, artArray }) => {
           </div>
         </ScrollableAnchor>
 
-        <Slider {...settings}>
+        <div className="projects-container">
           {projectsArray.map(project => (
             <div>
               <Link to={`/${project.id}`}>
@@ -94,16 +99,197 @@ const Home = ({ projectsArray, artArray }) => {
               </Link>
             </div>
           ))}
-        </Slider>
+        </div>
+
+        <div className="break">
+          <img src={angel} alt="projects-break" className="angel" />
+          <div className="break-title-left">
+            <h1>SKILL SETS</h1>
+            <p>
+              I am a full-stack web developer. Capable of building both basic
+              and complex web applications! Here's a visual of my abilities as a
+              developer!
+            </p>
+          </div>
+        </div>
+
+        <div className="skill-set-containers">
+          <div className="skill">
+            <h3 className="skill-name">React.js</h3>
+            <Progress
+              type="circle"
+              percent={100}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                },
+                success: {
+                  symbol: "💪",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">HTML</h3>
+            <Progress
+              type="circle"
+              percent={100}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                },
+                success: {
+                  symbol: "💪",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">Javascript</h3>
+            <Progress
+              type="circle"
+              percent={95}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">CSS</h3>
+            <Progress
+              type="circle"
+              percent={100}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                },
+                success: {
+                  symbol: "💪",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">Redux</h3>
+            <Progress
+              type="circle"
+              percent={80}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">React Native</h3>
+            <Progress
+              type="circle"
+              percent={88}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">Vue.js</h3>
+            <Progress
+              type="circle"
+              percent={75}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "😎",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">Angular.js</h3>
+            <Progress
+              type="circle"
+              percent={75}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "😎",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">Node.js</h3>
+            <Progress
+              type="circle"
+              percent={85}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+          <div className="skill">
+            <h3 className="skill-name">SQL</h3>
+            <Progress
+              type="circle"
+              percent={90}
+              width={180}
+              theme={{
+                active: {
+                  symbol: "🙌",
+                  color: color,
+                  trailColor: trailColor
+                }
+              }}
+            />
+          </div>
+        </div>
 
         <div className="break">
           <img src={angel} alt="projects-break" className="angel-flipped" />
           <div className="break-title-right">
             <h1>DIGITAL ART & ILLUSTRATION</h1>
             <p>
-              Here lies a selection of some of my best and favorite projects as
-              a Web Developer that I am incredibly proud to have been apart of
-              and help make possible.
+              Apart from being a Web Developer and UI / UX Designer, I am also a
+              Digital Artist and Illustrator! I have a good eye for detail and
+              enjoy adding life to the projects and pieces that I work on and
+              create! Here are couple of some of my favorite illustrations!
             </p>
           </div>
         </div>

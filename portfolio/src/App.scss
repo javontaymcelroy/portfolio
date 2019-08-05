@@ -192,7 +192,7 @@
     justify-content: space-between;
 
     .border {
-      height: 400vh;
+      height: 600vh;
       width: 1px;
       background: rgb(32, 32, 32);
       animation: borders 2s ease-in;
@@ -284,6 +284,7 @@
       left: 35vh;
       text-align: center;
       width: 65%;
+      padding-bottom: 10vh;
 
       h1 {
         font-size: 2.8rem;
@@ -323,40 +324,78 @@
     }
   }
 
-  .center {
+  .projects-container {
     position: relative;
+    z-index: 500;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 4vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .project-image {
+      width: 58vh;
+      height: 30vh;
+      object-fit: cover;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      position: relative;
+    }
+
+    .project-image:hover + .project-info {
+      transition: 0.2s ease-in-out;
+      background: rgb(40, 40, 40);
+    }
+
+    .project-info {
+      z-index: 999;
+      margin-bottom: 20px;
+      background: rgb(32, 32, 32);
+      padding: 2% 0;
+
+      .project-title {
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+      .project-stack {
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 95%;
+        font-size: 0.8rem;
+      }
+    }
+
+    .project-info:hover {
+      transition: 0.2s ease-in-out;
+      background: rgb(40, 40, 40);
+    }
+  }
+
+  .skill-set-containers {
+    position: relative;
+    z-index: 500;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 69.5%;
+
+    .skill {
+      padding: 5vh 0;
+      .skill-name {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .center {
     z-index: 500;
     user-select: none;
     color: white;
     width: 95%;
     margin: 4vh auto 0;
-  }
-
-  .project-image {
-    width: 58vh;
-    height: 30vh;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-
-  .project-image:hover + .project-info {
-    opacity: 1;
-    transition: 0.2s ease-in-out;
-  }
-
-  .project-info {
-    opacity: 0.5;
-    .project-title {
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-    .project-stack {
-      text-transform: uppercase;
-      font-weight: 500;
-      width: 95%;
-      font-size: 0.8rem;
-    }
   }
 
   .art-image {

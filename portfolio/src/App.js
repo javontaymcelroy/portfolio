@@ -44,7 +44,7 @@ const projectsArray = [
       "Pokéstat is a Pokémon Pokedex web application that allows users to browse, discover, search, and catch Pokémon! Through animated and holographic imagery, this application gives an experience unlike any other like it! I had the pleasure of working on this project with 5 other incredibly talented developers! My main contributions to this project was the Home, Dashboard, Pokémon progress bar graphs, search and filtering through Pokémon, and UI / UX design.",
     githubUrl: "https://github.com/pokepokepokedex/pokedex-frontend",
     projectUrl: "https://pokestat.netlify.com/home",
-    languages: "React.js / CSS / Axios, Node.js / Postgres / Express.js"
+    languages: "React.js / CSS / Axios / Node.js / Postgres"
   },
   {
     id: 2,
