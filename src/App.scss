@@ -231,7 +231,7 @@
     .angel-flipped {
       width: 81.5vh;
       position: relative;
-      right: -107.5vh;
+      right: -107vh;
       user-select: none;
       transform: scaleX(-1);
     }
@@ -382,11 +382,11 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 69.5%;
+    justify-content: center;
+    width: 75%;
 
     .skill {
-      padding: 5vh 0;
+      padding: 5vh 2vh;
       .skill-name {
         color: white;
         text-transform: uppercase;
