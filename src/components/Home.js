@@ -103,7 +103,7 @@ const Home = ({ projectsArray, artArray }) => {
 
         <div className="break">
           <img src={angel} alt="projects-break" className="angel-flipped" />
-          <div className="break-title-left">
+          <div className="break-title-right">
             <h1>SKILL SETS</h1>
             <p>
               I am a full-stack web developer. Capable of building both basic
@@ -283,7 +283,7 @@ const Home = ({ projectsArray, artArray }) => {
 
         <div className="break">
           <img src={angel} alt="projects-break" className="angel" />
-          <div className="break-title-right">
+          <div className="break-title-left">
             <h1>DIGITAL ART & ILLUSTRATION</h1>
             <p>
               Apart from being a Web Developer and UI / UX Designer, I am also a
