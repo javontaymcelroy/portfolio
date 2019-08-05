@@ -102,7 +102,7 @@ const Home = ({ projectsArray, artArray }) => {
         </div>
 
         <div className="break">
-          <img src={angel} alt="projects-break" className="angel" />
+          <img src={angel} alt="projects-break" className="angel-flipped" />
           <div className="break-title-left">
             <h1>SKILL SETS</h1>
             <p>
@@ -282,7 +282,7 @@ const Home = ({ projectsArray, artArray }) => {
         </div>
 
         <div className="break">
-          <img src={angel} alt="projects-break" className="angel-flipped" />
+          <img src={angel} alt="projects-break" className="angel" />
           <div className="break-title-right">
             <h1>DIGITAL ART & ILLUSTRATION</h1>
             <p>
