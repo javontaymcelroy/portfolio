@@ -89,9 +89,10 @@ const projectsArray = [
     projectImg: blackholeFull,
     projectThumbnail: blackhole,
     projectRole: "Front-End Developer & UI / UX Designer",
-    projectDesc: "",
-    githubUrl: "",
-    projectUrl: "",
+    projectDesc:
+      "BlackHole is a React-Web App that is the best stress reliever ever made! Ever wanted to rant to your boss? Let your friend have a piece of your mind? Or just had a bad day and need a place to rant? Blackhole is the place for that! Type out your feeling and send it off to the Blackhole, never to be seen again!...Or you can store it for up to 7 days if you'd like!",
+    githubUrl: "https://github.com/black-hole-lambda-build-week/back-end",
+    projectUrl: "https://black-hole-build-week.netlify.com/",
     languages: "React.js / CSS / Axios"
   },
   {
