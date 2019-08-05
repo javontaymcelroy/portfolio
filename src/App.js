@@ -9,27 +9,27 @@ import "./App.scss";
 import Home from "./components/Home";
 
 // ===================== ASSETS ===================== //
-import pokestat from "../src/assets/images/pokestat.png";
-import pokestatthumbnail from "../src/assets/images/pokestat_thumbnail.png";
+import pokestat from "./assets/images/pokestat.png";
+import pokestatthumbnail from "./assets/images/pokestat_thumbnail.png";
 
-import cinema3000 from "../src/assets/images/Cinema3000.png";
-import cinema3000Thumbnail from "../src/assets/images/cinema3000_thumbnail.png";
-import spectreThumbnail from "../src/assets/images/spectre_thumbnail.png";
+import cinema3000 from "./assets/images/Cinema3000.png";
+import cinema3000Thumbnail from "./assets/images/cinema3000_thumbnail.png";
+import spectreThumbnail from "./assets/images/spectre_thumbnail.png";
 
-import spectre from "../src/assets/images/spectre.png";
-import blackhole from "../src/assets/images/blackholescreenshot.png";
-import blackholeFull from "../src/assets/images/blackhole_full.png";
-import hercules from "../src/assets/images/hercules.png";
-import herculesFull from "../src/assets/images/hercules_full.png";
-import nasa from "../src/assets/images/nasa_redesign.png";
-import nasaFull from "../src/assets/images/nasa_full.png";
+import spectre from "./assets/images/spectre.png";
+import blackhole from "./assets/images/blackholescreenshot.png";
+import blackholeFull from "./assets/images/blackhole_full.png";
+import hercules from "./assets/images/hercules.png";
+import herculesFull from "./assets/images/hercules_full.png";
+import nasa from "./assets/images/nasa_redesign.png";
+import nasaFull from "./assets/images/nasa_full.png";
 
-import micah from "../src/assets/images/Micah.jpg";
-import kuzco from "../src/assets/images/Kuzco-background.jpg";
-import beyonce from "../src/assets/images/Witch-Beyonce-final.jpg";
-import manu from "../src/assets/images/Manu.jpg";
-import natural from "../src/assets/images/Natrual.jpg";
-import xj9 from "../src/assets/images/XJ9.jpg";
+import micah from "./assets/images/Micah.jpg";
+import kuzco from "./assets/images/Kuzco-background.jpg";
+import beyonce from "./assets/images/Witch-Beyonce-final.jpg";
+import manu from "./assets/images/Manu.jpg";
+import natural from "./assets/images/Natrual.jpg";
+import xj9 from "./assets/images/XJ9.jpg";
 import Project from "./components/Project";
 
 // ===================== PROJECT ARRAY ===================== //
