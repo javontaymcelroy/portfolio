@@ -1,0 +1,9 @@
+[build]
+  base    = ""
+  publish = "portfolio/portfolio/build"
+  command = "yarn build --type=UMD_DEV && cd portfolio/portfolio/ && yarn && yarn prestart && yarn build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
