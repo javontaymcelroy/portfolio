@@ -1,7 +1,7 @@
 [build]
-  base    = ""
-  publish = "portfolio/portfolio/"
-  command = "yarn build portfolio/portfolio/"
+  base    = "portfolio/portfolio"
+  publish = "portfolio/portfolio/build"
+  command = "yarn build"
 
 [[redirects]]
   from = "/*"
