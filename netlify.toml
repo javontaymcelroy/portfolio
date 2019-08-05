@@ -1,7 +1,7 @@
 [build]
   base    = ""
-  publish = "portfolio/portfolio/build"
-  command = "yarn build --type=UMD_DEV && cd portfolio/portfolio/ && yarn && yarn prestart && yarn build"
+  publish = "portfolio/portfolio/"
+  command = "yarn build portfolio/portfolio/"
 
 [[redirects]]
   from = "/*"
