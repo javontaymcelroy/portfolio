@@ -14,9 +14,12 @@
     border-bottom: 1px solid rgb(32, 32, 32);
 
     .logo {
+      position: relative;
+      z-index: 999999999;
       width: 5vh;
       margin-left: 2vh;
       margin-top: -1.4%;
+      mix-blend-mode: difference;
     }
 
     .nav-title {
@@ -227,7 +230,7 @@
     .angel-flipped {
       width: 81.5vh;
       position: relative;
-      right: -109vh;
+      right: -108vh;
       user-select: none;
       transform: scaleX(-1);
     }
