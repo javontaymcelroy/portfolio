@@ -1,9 +1,0 @@
-[build]
-  base    = "portfolio/portfolio"
-  publish = "portfolio/portfolio/build"
-  command = "yarn build"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
