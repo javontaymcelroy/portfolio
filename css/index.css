@@ -433,6 +433,12 @@ html ::-webkit-scrollbar-thumb {
     padding-top: 50px;
   }
 }
+
+.work-items {
+  width: 100%;
+  overflow: scroll;
+}
+
 .works .work-title {
   width: auto;
   margin: 0 0 7% 17%;
@@ -546,6 +552,7 @@ html ::-webkit-scrollbar-thumb {
   margin-top: 20px;
   line-height: 30px;
   padding-right: 2%;
+  width: 90%;
 }
 @media (max-width: 500px) {
   .works .work .project-image {
@@ -557,20 +564,21 @@ html ::-webkit-scrollbar-thumb {
   border: 1px solid #2a2a2a;
   padding: 10px;
   object-fit: cover;
-  max-width: 600px;
-  max-height: 400px;
+  width: 600px;
+  height: 300px;
   cursor: pointer;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
+  margin-right: 25px;
 }
 @media (max-width: 1024px) {
   .works .work .project-image img {
-    max-width: 1024px;
+    width: 1024px;
   }
 }
 @media (max-width: 800px) {
   .works .work .project-image img {
-    max-width: 300px;
+    width: 300px;
     opacity: 1;
   }
 }
@@ -601,7 +609,7 @@ html ::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 .works .work .main-btn {
-  width: 20%;
+  width: 40%;
   background: #0d0d0d;
   border: 1px solid rgb(100, 100, 100);
   text-decoration: none !important;
