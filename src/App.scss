@@ -219,6 +219,7 @@
     justify-content: flex-start;
     border-top: 1px solid rgb(32, 32, 32);
     border-bottom: 1px solid rgb(32, 32, 32);
+    width: 100%;
 
     .angel {
       width: 81.5vh;
@@ -230,7 +231,7 @@
     .angel-flipped {
       width: 81.5vh;
       position: relative;
-      right: -108vh;
+      right: -107.5vh;
       user-select: none;
       transform: scaleX(-1);
     }

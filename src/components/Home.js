@@ -296,7 +296,7 @@ const Home = ({ projectsArray, artArray }) => {
 
         <Slider {...settingsArt}>
           {artArray.map(piece => (
-            <div>
+            <div className="art-container">
               <img src={piece.artImg} className="art-image" alt="artwork" />
             </div>
           ))}
