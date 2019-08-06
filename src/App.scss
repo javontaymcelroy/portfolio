@@ -314,12 +314,16 @@
     .projects-container {
       position: relative;
       z-index: 500;
-      width: 95%;
+      width: 92%;
       margin: 0 auto;
       margin-top: 6vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 10px;
+
+      a {
+        margin: -3px 0;
+      }
 
       .project {
         width: 100%;
@@ -336,7 +340,7 @@
         }
 
         .project-image:hover {
-          filter: brightness(100%);
+          filter: brightness(90%);
         }
 
         .project-info {
@@ -349,12 +353,14 @@
           flex-direction: column;
           justify-content: space-between;
           height: 90%;
+          user-select: none;
+          pointer-events: none;
 
           .project-id {
             margin: 0;
-            font-size: 2rem;
-            text-transform: uppercase;
+            font-size: 1.8rem;
             font-weight: 900;
+            text-transform: uppercase;
             letter-spacing: 5px;
           }
 
