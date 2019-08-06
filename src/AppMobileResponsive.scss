@@ -11,31 +11,27 @@
       z-index: 999999999;
       display: flex;
       align-items: center;
-      padding: 1% 0;
+      padding: 2% 0;
       border-bottom: 1px solid rgb(32, 32, 32);
+      justify-content: space-between;
 
       .logo {
         position: relative;
         z-index: 999999999;
-        width: 5vh;
-        margin-left: 2vh;
+        width: 4vh;
+        margin-left: 1.5vh;
         margin-top: -1.4%;
         mix-blend-mode: difference;
       }
 
       .nav-title {
-        margin: 0 auto;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        color: white;
+        display: none;
       }
 
       .mobile-nav {
         right: 0;
-        margin-right: 2vh;
-        height: 30px;
+        margin-right: 1vh;
+        height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -44,15 +40,15 @@
 
       .top-mobile {
         display: inline-block;
-        width: 40px;
-        height: 4px;
+        width: 35px;
+        height: 3px;
         background: white;
         mix-blend-mode: difference;
       }
       .middle-mobile {
         display: inline-block;
-        width: 30px;
-        height: 4px;
+        width: 20px;
+        height: 3px;
         background: white;
         mix-blend-mode: difference;
         transition: all 0.2s ease-in-out;
@@ -60,7 +56,7 @@
       .bottom-mobile {
         display: inline-block;
         width: 10px;
-        height: 4px;
+        height: 3px;
         background: white;
         mix-blend-mode: difference;
         transition: all 0.2s ease-in-out;
@@ -85,8 +81,11 @@
         z-index: 500;
         color: white;
         text-align: left;
-        top: 40vh;
-        left: 40vh;
+        top: 28vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 82%;
         pointer-events: none;
 
         .hero-title {
@@ -119,23 +118,18 @@
         .hero-image {
           position: relative;
           z-index: 400;
-          width: 60vh;
-          margin: 10vh auto 0;
-          opacity: 0.8;
-          transition: 0.2s ease-in-out;
-        }
-
-        .hero-image:hover {
-          transition: 0.2s ease-in-out;
-          opacity: 1;
+          width: 50vh;
+          margin: 2vh auto 0;
+          filter: brightness(78%);
         }
 
         .white-btn {
           position: relative;
-          width: 28%;
-          margin: 3% auto 0;
-          padding: 1.5% 0;
+          width: 82%;
+          margin: 10% auto 0;
+          padding: 5% 0;
           border: 1px solid white;
+          background: white;
           outline: none;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -143,15 +137,10 @@
           cursor: pointer;
           transition: all 0.2s ease-in-out;
         }
-
-        .white-btn:hover {
-          background: rgb(32, 32, 32);
-          border: 1px solid rgb(32, 32, 32);
-          color: white;
-        }
       }
 
       .scroll-down-container {
+        display: none;
         position: absolute;
         z-index: 400;
         bottom: 0;
@@ -164,6 +153,7 @@
         justify-content: space-between;
 
         .scroll-down {
+          display: none;
           text-transform: uppercase;
           font-weight: 500;
           font-size: 0.8rem;
@@ -176,6 +166,7 @@
           width: 1px;
           height: 100px;
           background: white;
+          display: none;
         }
       }
 
@@ -188,6 +179,7 @@
         height: 20vh;
         bottom: 5%;
         left: 2vh;
+        display: none;
       }
 
       .border-grid {
@@ -226,7 +218,8 @@
         width: 100%;
 
         .angel {
-          width: 42.8%;
+          width: 100%;
+          height: 100%;
           position: relative;
           left: 0;
           user-select: none;
@@ -234,9 +227,10 @@
         }
 
         .angel-flipped {
-          width: 42.8%;
+          width: 100%;
+          height: 100%;
           position: relative;
-          left: 57.2%;
+          left: 0;
           user-select: none;
           transform: scaleX(-1);
           filter: brightness(80%);
@@ -244,17 +238,17 @@
 
         .break-title-left {
           position: absolute;
-          margin-top: 15vh;
-          left: 35vh;
+          margin-top: 1vh;
+          left: 5vh;
           text-align: left;
-          width: 65%;
+          width: 82%;
 
           h1 {
-            font-size: 2.8rem;
+            font-size: 1.5rem;
           }
 
           p {
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
 
           h1,
@@ -267,17 +261,17 @@
 
         .break-title-right {
           position: absolute;
-          margin-top: 15vh;
-          left: 35vh;
+          margin-top: 4vh;
+          left: 5vh;
           text-align: right;
-          width: 65%;
+          width: 82%;
 
           h1 {
-            font-size: 2.8rem;
+            font-size: 1.5rem;
           }
 
           p {
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
 
           h1,
@@ -358,6 +352,7 @@
             height: 90%;
             user-select: none;
             pointer-events: none;
+            width: 90%;
 
             .project-id {
               margin: 0;
@@ -368,16 +363,17 @@
             }
 
             .project-title {
-              font-size: 3rem;
+              font-size: 1rem;
               text-transform: uppercase;
               font-weight: 900;
               margin: 0;
+              margin-top: 6%;
               letter-spacing: 5px;
             }
 
             .project-type {
               margin: 0;
-              font-size: 1rem;
+              font-size: 0.8rem;
               text-transform: uppercase;
               font-weight: 900;
               letter-spacing: 2px;
@@ -405,22 +401,25 @@
       }
 
       .contact {
+        width: 100%;
         .break-title-center {
           position: absolute;
           z-index: 555;
           margin-top: 5vh;
-          left: 35vh;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
           text-align: center;
-          width: 65%;
+          width: 100%;
           padding-bottom: 10vh;
 
           h1 {
-            font-size: 2.8rem;
+            font-size: 1.5rem;
           }
 
           p {
-            font-size: 1rem;
-            padding-bottom: 3%;
+            font-size: 0.8rem;
+            padding-bottom: 10%;
           }
 
           h1,
@@ -432,11 +431,12 @@
         }
 
         .contact-btn {
-          width: 28%;
-          padding: 2% 15%;
-          background: white;
+          position: relative;
+          width: 100%;
+          margin: 15% auto 0;
+          padding: 5% 30%;
           border: 1px solid white;
-          color: rgb(32, 32, 32);
+          background: white;
           outline: none;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -462,8 +462,8 @@
     }
 
     .art-image {
-      width: 58vh;
-      height: 80vh;
+      width: 15vh;
+      height: 20vh;
       object-fit: cover;
     }
   }
