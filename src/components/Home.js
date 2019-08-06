@@ -74,7 +74,7 @@ const Home = ({ projectsArray, artArray }) => {
 
         <div className="projects-container">
           {projectsArray.map(project => (
-            <Link to={`/${project.id}`}>
+            <Link to={`/${project.id}`} key={project.id}>
               <div className="project">
                 <img
                   src={project.projectThumbnail}
@@ -290,7 +290,7 @@ const Home = ({ projectsArray, artArray }) => {
 
         <Slider {...settingsArt}>
           {artArray.map(piece => (
-            <div className="art-container">
+            <div className="art-container" key={piece.id}>
               <img src={piece.artImg} className="art-image" alt="artwork" />
             </div>
           ))}

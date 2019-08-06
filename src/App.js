@@ -117,23 +117,26 @@ const projectsArray = [
 // ===================== ART ARRAY ===================== //
 const artArray = [
   {
+    id: 1,
     artImg: micah
   },
   {
+    id: 2,
     artImg: kuzco
   },
   {
+    id: 3,
     artImg: beyonce
   },
   {
+    id: 4,
     artImg: manu
   },
   {
+    id: 5,
     artImg: natural
   },
-  {
-    artImg: xj9
-  }
+  { id: 6, artImg: xj9 }
 ];
 
 // ===================== COMPONENT ===================== //

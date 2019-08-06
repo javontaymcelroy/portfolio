@@ -11,6 +11,7 @@ const Modal = ({ handleClose, show }) => {
             href="https://www.linkedin.com/in/javontay-mcelroy-663b81bb/"
             target="_blank"
             rel="noopener noreferrer"
+            className="modal-links"
           >
             LinkedIn
           </a>
@@ -18,6 +19,7 @@ const Modal = ({ handleClose, show }) => {
             href="https://github.com/javontaymcelroy"
             target="_blank"
             rel="noopener noreferrer"
+            className="modal-links"
           >
             Github
           </a>
@@ -25,6 +27,7 @@ const Modal = ({ handleClose, show }) => {
             href="https://www.behance.net/javontay"
             target="_blank"
             rel="noopener noreferrer"
+            className="modal-links"
           >
             Behance.net
           </a>
@@ -32,12 +35,13 @@ const Modal = ({ handleClose, show }) => {
             href="https://instagram.com/thekingmuze"
             target="_blank"
             rel="noopener noreferrer"
+            className="modal-links"
           >
             Instagram
           </a>
-          <a type="button" onClick={handleClose} className="close-btn">
+          <h1 onClick={handleClose} className="close-btn modal-links">
             Close
-          </a>
+          </h1>
         </div>
       </div>
     </div>
