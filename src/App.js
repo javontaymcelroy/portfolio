@@ -144,10 +144,10 @@ const artArray = [
     artImg: natural
   },
   { id: 6, artImg: xj9 },
-  {
-    id: 7,
-    artImg: dannyPhantom
-  },
+  // {
+  //   id: 7,
+  //   artImg: dannyPhantom
+  // },
   {
     id: 8,
     artImg: Yzma

@@ -460,9 +460,20 @@
     margin: 4vh auto 0;
   }
 
-  .art-image {
-    width: 58vh;
-    height: 80vh;
-    object-fit: cover;
+  .art-container {
+    position: relative;
+    z-index: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+
+    .art-image {
+      width: 35vh;
+      height: 48vh;
+      object-fit: cover;
+      margin-top: 2vh;
+    }
   }
 }
