@@ -41,7 +41,12 @@ const Modal = ({ handleClose, show }) => {
           >
             Instagram
           </a>
-          <img src={x} className="close-btn" onClick={handleClose} />
+          <img
+            src={x}
+            className="close-btn"
+            onClick={handleClose}
+            alt="close"
+          />
           {/* <h1 onClick={handleClose} className="close-btn modal-links">
             Close
           </h1> */}
