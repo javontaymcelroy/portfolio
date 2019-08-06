@@ -330,8 +330,12 @@
           height: 30vh;
           object-fit: cover;
           cursor: pointer;
-          transition: 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           filter: brightness(40%);
+        }
+
+        .project-image:hover {
+          filter: brightness(100%);
         }
 
         .project-info {
