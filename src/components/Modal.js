@@ -1,6 +1,8 @@
 import React from "react";
 import "./Modal.scss";
 
+import x from "../assets/images/x.svg";
+
 const Modal = ({ handleClose, show }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
   return (
@@ -39,9 +41,10 @@ const Modal = ({ handleClose, show }) => {
           >
             Instagram
           </a>
-          <h1 onClick={handleClose} className="close-btn modal-links">
+          <img src={x} className="close-btn" onClick={handleClose} />
+          {/* <h1 onClick={handleClose} className="close-btn modal-links">
             Close
-          </h1>
+          </h1> */}
         </div>
       </div>
     </div>
