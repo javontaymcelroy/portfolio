@@ -30,6 +30,11 @@ import beyonce from "./assets/images/Witch-Beyonce-final.jpg";
 import manu from "./assets/images/Manu.jpg";
 import natural from "./assets/images/Natrual.jpg";
 import xj9 from "./assets/images/XJ9.jpg";
+import dannyPhantom from "./assets/images/Danny-Phantom.jpg";
+import Yzma from "./assets/images/Yzma.jpg";
+import kehlani from "./assets/images/kehlani.jpg";
+import posiedon from "./assets/images/Posiedon.jpg";
+import storm from "./assets/images/Storm.jpg";
 import Project from "./components/Project";
 
 // ===================== PROJECT ARRAY ===================== //
@@ -76,7 +81,7 @@ const projectsArray = [
   {
     id: 4,
     projectName: "NASA",
-    projectType: "Web Design",
+    projectType: "Mobile Design",
     projectImg: nasaFull,
     projectThumbnail: nasa,
     projectRole: "UI / UX Designer",
@@ -107,9 +112,10 @@ const projectsArray = [
     projectImg: herculesFull,
     projectThumbnail: hercules,
     projectRole: "Front-End Developer & UI / UX Designer",
-    projectDesc: "",
-    githubUrl: "",
-    projectUrl: "",
+    projectDesc:
+      "Hercules is a workout tracking web app that allows users to track their reps and how much they lift during their workouts. Users can create their own workouts, tracking their progress and also see how well they are improving overtime! This was a project I built fully from the ground up. From the UI / UX Designer, to the Front-End, and the Back-End. This project took roughly 3 days to produce.",
+    githubUrl: "https://github.com/javontaymcelroy/hercules-frontend",
+    projectUrl: "https://hercules-app.netlify.com/",
     languages: "React.js / SASS / Axios / Node.js / Express"
   }
 ];
@@ -136,7 +142,27 @@ const artArray = [
     id: 5,
     artImg: natural
   },
-  { id: 6, artImg: xj9 }
+  { id: 6, artImg: xj9 },
+  {
+    id: 7,
+    artImg: dannyPhantom
+  },
+  {
+    id: 8,
+    artImg: Yzma
+  },
+  {
+    id: 9,
+    artImg: kehlani
+  },
+  {
+    id: 10,
+    artImg: posiedon
+  },
+  {
+    id: 11,
+    artImg: storm
+  }
 ];
 
 // ===================== COMPONENT ===================== //
