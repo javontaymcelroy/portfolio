@@ -83,19 +83,22 @@ const Home = ({ projectsArray, artArray }) => {
 
         <div className='projects-container'>
           {projectsArray.map(project => (
-            <div className='project'>
-              <Link to={`/${project.id}`}>
+            <Link to={`/${project.id}`}>
+              <div className='project'>
                 <img
                   src={project.projectThumbnail}
                   className='project-image'
                   alt={project.projectName}
                 />
                 <div className='project-info'>
-                  <p className='project-type'>{project.projectType}</p>
-                  <p className='project-title'>{project.projectName}</p>
+                  <p className='project-id'>0{project.id}</p>
+                  <div>
+                    <p className='project-type'>{project.projectType}</p>
+                    <p className='project-title'>{project.projectName}</p>
+                  </div>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
 

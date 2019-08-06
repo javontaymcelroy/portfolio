@@ -332,6 +332,7 @@
           cursor: pointer;
           transition: all 0.2s ease-in-out;
           filter: brightness(40%);
+          border: 1px solid rgba(255, 255, 255, 0.151);
         }
 
         .project-image:hover {
@@ -341,9 +342,21 @@
         .project-info {
           position: absolute;
           z-index: 500;
-          bottom: 10%;
+          bottom: 5%;
           left: 5%;
           text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 90%;
+
+          .project-id {
+            margin: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 5px;
+          }
 
           .project-title {
             font-size: 3rem;
