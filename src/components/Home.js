@@ -99,7 +99,7 @@ const Home = ({ projectsArray, artArray }) => {
             <h1>THE SKILL SET OF A FULL STACK WEB DEVELOPER</h1>
             <p>
               I am a full-stack web developer. Capable of building both basic
-              and complex web applications! I am always researching, practing,
+              and complex web applications! I am always researching, practicing,
               and getting better at various programming languages to make sure I
               stay up-to-date, relevant, and versatile! Here's a visual of my
               abilities as a developer!
