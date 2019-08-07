@@ -117,35 +117,35 @@ const projectsArray = [
     githubUrl: "https://github.com/javontaymcelroy/hercules-frontend",
     projectUrl: "https://hercules-app.netlify.com/",
     languages: "React.js / SASS / Axios / Node.js / Express"
-  },
-  {
-    id: 7,
-    projectName: "Dandi",
-    projectType: "Mobile Design",
-    projectImg: herculesFull,
-    projectThumbnail: dandiApp,
-    projectRole: "UI / UX Engingeer",
-    projectDesc:
-      "Hercules is a workout tracking web app that allows users to track their reps and how much they lift during their workouts. Users can create their own workouts, tracking their progress and also see how well they are improving overtime! This was a project I built fully from the ground up. From the UI / UX Designer, to the Front-End, and the Back-End. This project took roughly 3 days to produce.",
-    githubUrl: "https://github.com/javontaymcelroy/hercules-frontend",
-    projectUrl: "https://hercules-app.netlify.com/",
-    languages:
-      "Figma / Affinity Designer / Adobe Photoshop CC / Adobe After Effects CC"
-  },
-  {
-    id: 8,
-    projectName: "Dandi.io",
-    projectType: "Web Design",
-    projectImg: herculesFull,
-    projectThumbnail: dandiWebsite,
-    projectRole: "UI / UX Engingeer",
-    projectDesc:
-      "Hercules is a workout tracking web app that allows users to track their reps and how much they lift during their workouts. Users can create their own workouts, tracking their progress and also see how well they are improving overtime! This was a project I built fully from the ground up. From the UI / UX Designer, to the Front-End, and the Back-End. This project took roughly 3 days to produce.",
-    githubUrl: "https://github.com/javontaymcelroy/hercules-frontend",
-    projectUrl: "https://hercules-app.netlify.com/",
-    languages:
-      "Figma / Affinity Designer / Adobe Photoshop CC / Adobe After Effects CC"
   }
+  // {
+  //   id: 7,
+  //   projectName: "Dandi",
+  //   projectType: "Mobile Design",
+  //   projectImg: herculesFull,
+  //   projectThumbnail: dandiApp,
+  //   projectRole: "UI / UX Engingeer",
+  //   projectDesc:
+  //     "Hercules is a workout tracking web app that allows users to track their reps and how much they lift during their workouts. Users can create their own workouts, tracking their progress and also see how well they are improving overtime! This was a project I built fully from the ground up. From the UI / UX Designer, to the Front-End, and the Back-End. This project took roughly 3 days to produce.",
+  //   githubUrl: "https://github.com/javontaymcelroy/hercules-frontend",
+  //   projectUrl: "https://hercules-app.netlify.com/",
+  //   languages:
+  //     "Figma / Affinity Designer / Adobe Photoshop CC / Adobe After Effects CC"
+  // },
+  // {
+  //   id: 8,
+  //   projectName: "Dandi.io",
+  //   projectType: "Web Design",
+  //   projectImg: herculesFull,
+  //   projectThumbnail: dandiWebsite,
+  //   projectRole: "UI / UX Engingeer",
+  //   projectDesc:
+  //     "Hercules is a workout tracking web app that allows users to track their reps and how much they lift during their workouts. Users can create their own workouts, tracking their progress and also see how well they are improving overtime! This was a project I built fully from the ground up. From the UI / UX Designer, to the Front-End, and the Back-End. This project took roughly 3 days to produce.",
+  //   githubUrl: "https://github.com/javontaymcelroy/hercules-frontend",
+  //   projectUrl: "https://hercules-app.netlify.com/",
+  //   languages:
+  //     "Figma / Affinity Designer / Adobe Photoshop CC / Adobe After Effects CC"
+  // }
 ];
 
 // ===================== ART ARRAY ===================== //
