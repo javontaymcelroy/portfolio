@@ -452,28 +452,19 @@
     }
   }
 
-  .center {
-    z-index: 500;
-    user-select: none;
-    color: white;
-    width: 95%;
-    margin: 4vh auto 0;
-  }
-
   .art-container {
+    margin-top: 20px;
     position: relative;
-    z-index: 500;
+    z-index: 200;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
+    justify-content: center;
 
-    .art-image {
-      width: 35vh;
-      height: 48vh;
+    .artwork {
+      width: 45vh;
+      height: 60vh;
       object-fit: cover;
-      margin-top: 2vh;
+      margin: 15px;
     }
   }
 }
