@@ -61,8 +61,8 @@ const projectsArray = [
     projectRole: "Front-End Developer & UI / UX Designer",
     projectDesc:
       "Cinema3000 is a TV and Movie web application, similar to Netflix or Hulu that allows users to discover and watch any movie or television series. Cinema 3000 utilizes 3 APIs, TMDB, YouTube, and VideoSpider. I worked on this project with 3 other developers. My main contribution was the idea, Movie component, TV component, Single Movie Component, Single TV Component, Genre Pages Components, Cast components, and more. On top of developing the app, I was also the UI / UX designer as well who's responsibility was to ensure some design consistencies was kept throughout the app and the CSS.",
-    githubUrl: "",
-    projectUrl: "",
+    githubUrl: "https://github.com/project-tvmv/project-tvmv",
+    projectUrl: "https://cinema3000.netlify.com/",
     languages: "React.js / CSS / Axios"
   },
   {
