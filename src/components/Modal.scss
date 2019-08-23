@@ -1,0 +1,156 @@
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 600;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animateIn 0.5s ease-in-out;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    .modal-links {
+      padding-top: 10vh;
+      color: black;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      transition: all 0.2s ease-in-out;
+      background: white;
+      width: 100%;
+      height: 100%;
+      animation: in 1s ease-in-out;
+    }
+
+    .modal-links:nth-child(1) {
+      animation: in 0.2s ease-in-out;
+    }
+    .modal-links:nth-child(2) {
+      animation: in 0.4s ease-in-out;
+    }
+    .modal-links:nth-child(3) {
+      animation: in 0.6s ease-in-out;
+    }
+    .modal-links:nth-child(4) {
+      animation: in 0.8s ease-in-out;
+    }
+    .modal-links:nth-child(5) {
+      animation: in 1s ease-in-out;
+    }
+
+    .modal-links:hover {
+      // color: rgb(126, 126, 126);
+      color: rgb(196, 31, 31);
+      text-decoration: line-through;
+    }
+
+    .close-btn {
+      cursor: pointer;
+      position: absolute;
+      z-index: 700;
+      width: 4%;
+      right: 1vh;
+      top: 0.5vh;
+    }
+
+    .close-btn:hover {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes in {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes out {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .modal {
+    position: fixed;
+    z-index: 600;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animateIn 0.5s ease-in-out;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: space-between;
+      .modal-links {
+        padding-top: 10vh;
+        color: black;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        transition: all 0.2s ease-in-out;
+        background: white;
+        width: 100%;
+        height: 100%;
+        animation: in 1s ease-in-out;
+      }
+
+      .modal-links:nth-child(1) {
+        animation: in 0.2s ease-in-out;
+      }
+      .modal-links:nth-child(2) {
+        animation: in 0.4s ease-in-out;
+      }
+      .modal-links:nth-child(3) {
+        animation: in 0.6s ease-in-out;
+      }
+      .modal-links:nth-child(4) {
+        animation: in 0.8s ease-in-out;
+      }
+      .modal-links:nth-child(5) {
+        animation: in 1s ease-in-out;
+      }
+
+      .modal-links:hover {
+        // color: rgb(126, 126, 126);
+        color: rgb(196, 31, 31);
+        text-decoration: line-through;
+      }
+
+      .close-btn {
+        cursor: pointer;
+        position: absolute;
+        z-index: 700;
+        width: 10%;
+        right: 1vh;
+        top: 0.5vh;
+      }
+
+      .close-btn:hover {
+        transition: all 0.5s ease-in-out;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
