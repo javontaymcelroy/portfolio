@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ScrollableAnchor from "react-scrollable-anchor";
-import { Progress } from "react-sweet-progress";
+// import { Progress } from "react-sweet-progress";
 import "react-sweet-progress/lib/style.css";
 
 import heroImg from "../assets/images/hold_up.png";
@@ -14,14 +14,14 @@ import angel from "../assets/images/angel.png";
 import "../App.scss";
 
 const Home = ({ projectsArray, artArray }) => {
-  const color = "white";
-  const trailColor = "#474747";
+  // const color = "white";
+  // const trailColor = "#474747";
   return (
     <div className="home-container">
       <div className="hero-content">
         <h1 className="hero-title">JAVONTAY McELROY</h1>
         <h6 className="hero-caption">
-          Full Stack Web Developer | UI / UX Designer
+          Full Stack Web Developer | UI / UX Designer | Illustrator
         </h6>
       </div>
       <div className="hero-image-container">
@@ -46,211 +46,51 @@ const Home = ({ projectsArray, artArray }) => {
             <h1>Projects Crafted With Love</h1>
             <p>
               Here's a collection of some of my best and favorite projects as a
-              Web Developer that I am incredibly proud to have been apart of and
-              help make possible.
+              Web Developer and UX Designer that I am proud to have been apart
+              of and help make possible.
             </p>
           </div>
         </div>
       </ScrollableAnchor>
 
       <div className="projects-container">
-        {projectsArray.map(project => (
-          <Link to={`/${project.id}`} key={project.id}>
-            <div className="project">
-              <img
-                src={project.projectThumbnail}
-                className="project-image"
-                alt={project.projectName}
-              />
-              <div className="project-info">
-                <p className="project-id">0{project.id}</p>
-                <div>
-                  <p className="project-type">{project.projectType}</p>
-                  <p className="project-title">{project.projectName}</p>
+        {projectsArray.map((project) => {
+          return project.caseStudy === true ? (
+            <Link to={`/${project.id}/${project.projectName}`} key={project.id}>
+              <div className="project">
+                <img
+                  src={project.projectThumbnail}
+                  className="project-image"
+                  alt={project.projectName}
+                />
+                <div className="project-info">
+                  <p className="project-id">0{project.id}</p>
+                  <div>
+                    <p className="project-type">{project.projectType}</p>
+                    <p className="project-title">{project.projectName}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
-      </div>
-
-      <div className="break">
-        <img src={angel} alt="projects-break" className="angel-flipped" />
-        <div className="break-title-right">
-          <h1>THE SKILL SET OF A F.S.W.D.</h1>
-          <p>
-            I am a full-stack web developer. Capable of building both basic and
-            complex web apps! Here's a visual of my abilities as a developer!
-          </p>
-        </div>
-      </div>
-
-      <div className="skill-set-containers">
-        <div className="skill">
-          <h3 className="skill-name">React.js</h3>
-          <Progress
-            type="circle"
-            percent={100}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              },
-              success: {
-                symbol: "💪",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">HTML</h3>
-          <Progress
-            type="circle"
-            percent={100}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              },
-              success: {
-                symbol: "💪",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">Javascript</h3>
-          <Progress
-            type="circle"
-            percent={95}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">CSS</h3>
-          <Progress
-            type="circle"
-            percent={100}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              },
-              success: {
-                symbol: "💪",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">Redux</h3>
-          <Progress
-            type="circle"
-            percent={80}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">React Native</h3>
-          <Progress
-            type="circle"
-            percent={88}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">Vue.js</h3>
-          <Progress
-            type="circle"
-            percent={75}
-            width={180}
-            theme={{
-              active: {
-                symbol: "😎",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">Angular.js</h3>
-          <Progress
-            type="circle"
-            percent={75}
-            width={180}
-            theme={{
-              active: {
-                symbol: "😎",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">Node.js</h3>
-          <Progress
-            type="circle"
-            percent={85}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
-        <div className="skill">
-          <h3 className="skill-name">SQL</h3>
-          <Progress
-            type="circle"
-            percent={90}
-            width={180}
-            theme={{
-              active: {
-                symbol: "🙌",
-                color: color,
-                trailColor: trailColor
-              }
-            }}
-          />
-        </div>
+            </Link>
+          ) : (
+            <Link to={`/${project.id}`} key={project.id}>
+              <div className="project">
+                <img
+                  src={project.projectThumbnail}
+                  className="project-image"
+                  alt={project.projectName}
+                />
+                <div className="project-info">
+                  <p className="project-id">0{project.id}</p>
+                  <div>
+                    <p className="project-type">{project.projectType}</p>
+                    <p className="project-title">{project.projectName}</p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
 
       <div className="break">
@@ -266,7 +106,7 @@ const Home = ({ projectsArray, artArray }) => {
       </div>
 
       <div className="art-container">
-        {artArray.map(art => (
+        {artArray.map((art) => (
           <img src={art.artImg} alt="artwork" className="artwork" />
         ))}
       </div>

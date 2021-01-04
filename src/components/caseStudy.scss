@@ -1,0 +1,141 @@
+.caseStudy-container {
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 99;
+
+  .case-hero-container {
+    position: relative;
+    width: 90%;
+    margin: 4vh auto;
+    border: 2px solid hsl(50, 100%, 56%);
+    padding: 30px;
+    border-radius: 5px;
+
+    .hero-text {
+      position: absolute;
+      z-index: 99;
+      bottom: 10vh;
+      left: 10vh;
+      text-align: left;
+
+      .case-title {
+        text-transform: uppercase;
+        font-size: 6rem;
+        margin: 0;
+        font-weight: bold;
+      }
+      .case-tagline {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .case-role {
+        font-size: 1rem;
+      }
+
+      .case-date {
+        font-size: 1rem;
+        font-weight: 200;
+        color: #747474;
+        text-align: left;
+      }
+    }
+    .case-hero {
+      position: relative;
+      z-index: 50;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+  }
+
+  .case-study-content {
+    margin-left: 4vh;
+    text-align: center;
+    user-select: none;
+    .about-project {
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-top: 12vh;
+    }
+
+    .case-header {
+      color: hsl(50, 100%, 56%);
+      font-size: 3rem;
+      margin: 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-family: "Bebas Neue", cursive;
+      letter-spacing: 4px;
+      text-align: left;
+    }
+
+    .case-body {
+      line-height: 5vh;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-align: left;
+      user-select: none;
+    }
+    .case-subheader {
+      text-align: left;
+      font-size: 2rem;
+    }
+    .case-image {
+      width: 85%;
+      margin: 12vh auto;
+      user-select: none;
+    }
+
+    .fullWidth {
+      width: 100%;
+    }
+
+    .image-border {
+      border: 6px solid hsl(50, 100%, 56%);
+      border-radius: 5px;
+    }
+
+    .no-margin {
+      margin: 0 auto;
+    }
+    .divider {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: rgb(48, 48, 48);
+      margin: 10vh auto;
+    }
+  }
+}
+.border-grid {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .border {
+    height: 100vh;
+    width: 1px;
+    background: rgb(32, 32, 32);
+    animation: borders 2s ease-in;
+  }
+}
+
+@keyframes borders {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 400vh;
+  }
+}

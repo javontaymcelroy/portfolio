@@ -122,6 +122,7 @@
         margin: 10vh auto 0;
         opacity: 0.8;
         transition: 0.2s ease-in-out;
+        // filter: grayscale(100%);
       }
 
       .hero-image:hover {
@@ -243,7 +244,7 @@
 
       .break-title-left {
         position: absolute;
-        margin-top: 15vh;
+        margin-top: 8vh;
         left: 35vh;
         text-align: left;
         width: 65%;
@@ -461,10 +462,11 @@
     justify-content: center;
 
     .artwork {
-      width: 45vh;
-      height: 60vh;
+      width: 30vh;
+      height: 30vh;
       object-fit: cover;
       margin: 15px;
+      border-radius: 10px;
     }
   }
 }
